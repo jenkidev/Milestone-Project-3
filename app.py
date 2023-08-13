@@ -21,7 +21,7 @@ mongo = PyMongo(app)
 @app.route("/display_fixtures")
 def display_fixtures():
     fixtures = list(mongo.db.fixtures.find())
-    return render_template("news.html", fixtures = fixtures)
+    return render_template("fixtures.html", fixtures = fixtures)
 
 
 if __name__ == "__main__":
