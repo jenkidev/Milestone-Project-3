@@ -2,6 +2,21 @@
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-.heading-margin {
-    margin-left: 1em;
+.nav-wrapper {
+    height: 10em !important;
+}
+
+.logo {
+    height: 5em;
+    width: 5em;
+}
+
+.nav-link {
+    font-size: 2em;
+}
+
+@media screen and (min-width: 992px) {
+    .heading-margin{
+        margin-left: 1em;
+    }
 }
