@@ -18,10 +18,10 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
-@app.route("/display_fixtures")
-def display_fixtures():
-    fixtures = list(mongo.db.fixtures.find())
-    return render_template("fixtures.html", fixtures = fixtures)
+@app.route("/display_articles")
+def display_articles():
+    articles = list(mongo.db.articles.find())
+    return render_template("articles.html", articles = articles)
 
 
 if __name__ == "__main__":
