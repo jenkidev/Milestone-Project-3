@@ -15,12 +15,12 @@
 </head>
 <body>
     <header>
-        <nav class="nav-extended text-shadow light-blue darken-1">
+        <nav class="nav-extended text-shadow light-green darken-4">
             <div class="nav-wrapper">
               <a href="#!" class="heading-margin brand-logo"><img class="logo" src="../static/images/eagles_logo.png"></a>
               <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
               <ul class="right hide-on-med-and-down">
-                    <li><a class="nav-link" href="#">Home</a></li>
+                    <li><a class="nav-link" href="{{ url_for('display_articles') }}">News</a></li>
                     <li><a class="nav-link" href="#">Fixtures</a></li>
                     <li><a class="nav-link" href="#">Players</a></li>
                     <li><a class="nav-link" href="#">Contact Us</a></li>
@@ -32,7 +32,7 @@
           </nav>
         
           <ul class="sidenav" id="mobile-demo">
-                <li><a class="nav-link" href="#">Home</a></li>
+                <li><a class="nav-link" href="#">News</a></li>
                 <li><a class="nav-link" href="#">Fixtures</a></li>
                 <li><a class="nav-link" href="#">Players</a></li>
                 <li><a class="nav-link" href="#">Contact Us</a></li>
