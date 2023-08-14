@@ -23,7 +23,7 @@ def display_articles():
     articles = list(mongo.db.articles.find())
     return render_template("articles.html", articles = articles)
 
-@app.route("/register_user")
+@app.route("/register", methods=["GET", "POST"])
 def register_user():
     return render_template("register.html")
 

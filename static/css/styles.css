@@ -30,7 +30,7 @@ html {
 
 .page-heading {
     font-size: 4em;
-    margin-left: 1em;
+    text-align: center;
 }
 
 /* News Page styling */
@@ -46,6 +46,12 @@ html {
 
 .news-info {
     margin-top: 4em;
+}
+
+/* Register Page styling */
+
+.register-card {
+    background-color:aliceblue;
 }
 
 /* Footer Styling */
