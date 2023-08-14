@@ -1,3 +1,5 @@
+/* Full Page styling */
+
 @import url('https://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700');
 
 html {
@@ -8,6 +10,8 @@ html {
 .text-shadow {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
+
+/* Nav bar Styling */
 
 .nav-wrapper {
     height: 10em !important;
@@ -21,6 +25,30 @@ html {
 .nav-link {
     font-size: 2em;
 }
+
+/* Heading styles */
+
+.page-heading {
+    font-size: 4em;
+    margin-left: 1em;
+}
+
+/* News Page styling */
+
+.article-header {
+    margin-bottom: 1em;
+    font-size: 3rem;
+}
+
+.article-content {
+    font-size: 1.5em;
+}
+
+.news-info {
+    margin-top: 4em;
+}
+
+/* Footer Styling */
 
 footer {
     color: white;
