@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700');
+
 html {
     height: 100%;
+    font-family: 'Exo';
 }
 
 .text-shadow {
@@ -21,17 +24,21 @@ html {
 
 footer {
     color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-heading {
     text-align: center;
     font-size: 2em;
     margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 .footer-training-times {
     text-align: center;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .footer-training-times p {
@@ -47,6 +54,7 @@ footer {
     color: white;
     width: 33%;
     font-size: 2em;
+    margin-bottom: 1em;
 }
 
 @media screen and (min-width: 992px) {
