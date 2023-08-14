@@ -23,6 +23,10 @@ def display_articles():
     articles = list(mongo.db.articles.find())
     return render_template("articles.html", articles = articles)
 
+@app.route("/register_user")
+def register_user():
+    return render_template("register.html")
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
