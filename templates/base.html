@@ -24,7 +24,7 @@
                     <li><a class="nav-link" href="#">Fixtures</a></li>
                     <li><a class="nav-link" href="#">Players</a></li>
                     <li><a class="nav-link" href="#">Contact Us</a></li>
-                    <li><a class="nav-link" href="#">Sign In</a></li>
+                    <li><a class="nav-link" href="{{ url_for('signin') }}">Sign In</a></li>
                     <li><a class="nav-link" href="#">Sign Out</a></li>
                     <li><a class="nav-link" href="{{ url_for('register_user') }}">Register</a></li>
               </ul>
@@ -36,7 +36,7 @@
                 <li><a class="nav-link" href="#">Fixtures</a></li>
                 <li><a class="nav-link" href="#">Players</a></li>
                 <li><a class="nav-link" href="#">Contact Us</a></li>
-                <li><a class="nav-link" href="#">Sign In</a></li>
+                <li><a class="nav-link" href="{{ url_for('signin') }}">Sign In</a></li>
                 <li><a class="nav-link" href="#">Sign Out</a></li>
                 <li><a class="nav-link" href="{{ url_for('register_user') }}">Register</a></li>
           </ul>

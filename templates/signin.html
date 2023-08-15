@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2 class="page-heading">Sign-in</h2>
+
+<div class="row">
+    <form class="col s12 m6 offset-m3" method="POST" action="{{ url_for('register_user') }}">
+        <div class="card-panel register-card">
+            <!-- username -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-user-plus light-green-text text-darken-4 prefix"></i>
+                    <input id="username" name="username" type="text" minlength="5"
+                        maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+                    <label for="username">Username</label>
+                </div>
+            </div>
+            <!-- password -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fa-solid fa-user-shield light-green-text text-darken-4 prefix"></i>
+                    <input id="password" name="password" type="password" minlength="5"
+                        maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            <!-- register -->
+            <div class="row">
+                <button type="submit" class="col s12 btn-large light-green darken-4 text-shadow waves-effect waves-light">
+                    Register <i class="fa-solid fa-right-to-bracket"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
