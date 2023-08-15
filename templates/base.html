@@ -22,11 +22,14 @@
               <ul class="right hide-on-med-and-down">
                     <li><a class="nav-link" href="{{ url_for('display_articles') }}">News</a></li>
                     <li><a class="nav-link" href="#">Fixtures</a></li>
-                    <li><a class="nav-link" href="#">Players</a></li>
+                    {% if session.user %}
+                        <li><a class="nav-link" href="#">Players</a></li>
+                        <li><a class="nav-link" href="#">Sign Out</a></li>
+                    {% else %}
+                        <li><a class="nav-link" href="{{ url_for('signin') }}">Sign In</a></li>
+                        <li><a class="nav-link" href="{{ url_for('register_user') }}">Register</a></li>
+                    {% endif %}
                     <li><a class="nav-link" href="#">Contact Us</a></li>
-                    <li><a class="nav-link" href="{{ url_for('signin') }}">Sign In</a></li>
-                    <li><a class="nav-link" href="#">Sign Out</a></li>
-                    <li><a class="nav-link" href="{{ url_for('register_user') }}">Register</a></li>
               </ul>
             </div>
           </nav>
