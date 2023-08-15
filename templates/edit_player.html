@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2 class="center">Add Player</h2>
+    <div class="row">
+        <div class="card-panel col s12 m8 offset-m2">
+            <form class="col s12" method="POST" action="{{ url_for('add_player') }}">
+                <!-- position selection -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
+                        <select id="position_name" name="position_name" class="validate" required>
+                            <option value="" disabled selected>Choose Category</option>
+                            {% for position in positions %}
+                                <option value="{{ position.position_name }}">{{ position.position_name }}</option>
+                            {% endfor %}
+                        </select>
+                        <label for="position_name">Player Position</label>
+                    </div>
+                </div>
+                <!-- player name -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
+                        <input id="player_name" name="player_name" minlength="5" maxlength="50" type="text" class="validate"
+                            required>
+                        <label for="player_name">Player Name</label>
+                    </div>
+                </div>
+                <!-- player height -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                        <textarea id="player_height" name="player_height" minlength="3" maxlength="5"
+                            class="materialize-textarea validate" required></textarea>
+                        <label for="player_height">Player Height (add cm to end)</label>
+                    </div>
+                </div>
+                <!-- player weight -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                        <textarea id="player_weight" name="player_weight" minlength="2" maxlength="5"
+                            class="materialize-textarea validate" required></textarea>
+                        <label for="player_weight">Player Weight (add kg to end)</label>
+                    </div>
+                </div>
+                <!-- player point average -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                        <textarea id="player_points" name="player_points" minlength="3" maxlength="5"
+                            class="materialize-textarea validate" required></textarea>
+                        <label for="player_points">Last Season Point Average</label>
+                    </div>
+                </div>
+                <!-- player rebound average -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                        <textarea id="player_rebounds" name="player_rebounds" minlength="3" maxlength="5"
+                            class="materialize-textarea validate" required></textarea>
+                        <label for="player_rebounds">Last Season Rebound Average</label>
+                    </div>
+                </div>
+                <!-- player assist average -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                        <textarea id="player_assists" name="player_assists" minlength="3" maxlength="5"
+                            class="materialize-textarea validate" required></textarea>
+                        <label for="player_assists">Last Season Assist Average</label>
+                    </div>
+                </div>
+                <!-- player profile image -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                        <textarea id="player_profile" name="player_profile" minlength="3" maxlength="500"
+                            class="materialize-textarea validate" required></textarea>
+                        <label for="player_profile">Paste imgur image link with file extension (e.g. .png, .jpg, etc.)</label>
+                    </div>
+                </div>
+                
+                <!-- submit button -->
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <button type="submit" class="btn-large green text-shadow">
+                            Add player <i class="fas fa-plus-square right"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
