@@ -24,7 +24,7 @@
                     <li><a class="nav-link" href="#">Fixtures</a></li>
                     {% if session.user %}
                         <li><a class="nav-link" href="#">Players</a></li>
-                        <li><a class="nav-link" href="#">Sign Out</a></li>
+                        <li><a class="nav-link" href="{{ url_for('signout') }}">Sign Out</a></li>
                     {% else %}
                         <li><a class="nav-link" href="{{ url_for('signin') }}">Sign In</a></li>
                         <li><a class="nav-link" href="{{ url_for('register_user') }}">Register</a></li>
@@ -40,7 +40,7 @@
                 <li><a class="nav-link" href="#">Players</a></li>
                 <li><a class="nav-link" href="#">Contact Us</a></li>
                 <li><a class="nav-link" href="{{ url_for('signin') }}">Sign In</a></li>
-                <li><a class="nav-link" href="#">Sign Out</a></li>
+                <li><a class="nav-link" href="{{ url_for('signout') }}">Sign Out</a></li>
                 <li><a class="nav-link" href="{{ url_for('register_user') }}">Register</a></li>
           </ul>
     </header>
@@ -51,7 +51,7 @@
             {% if messages %}
                 {% for message in messages %}
                     <div class="row flashes">
-                        <h4 class="red darken-3 center-align">{{ message }}</h4>
+                        <h4 class="flash-message center-align">{{ message }}</h4>
                     </div>
                 {% endfor %}
             {% endif %}

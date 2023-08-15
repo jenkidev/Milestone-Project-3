@@ -26,6 +26,14 @@ html {
     font-size: 2em;
 }
 
+/* Flash Message styling */
+
+.flash-message {
+    background: green;
+    color: white;
+    line-height: 2;
+}
+
 /* Heading styles */
 
 .page-heading {
