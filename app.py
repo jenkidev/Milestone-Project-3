@@ -27,7 +27,8 @@ def display_articles():
 
 @app.route("/display_players")
 def display_players():
-    return render_template("players.html")
+    players = list(mongo.db.players.find())
+    return render_template("players.html", players=players)
 
 
 @app.route("/register", methods=["GET", "POST"])
