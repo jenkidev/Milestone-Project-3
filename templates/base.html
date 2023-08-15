@@ -23,7 +23,7 @@
                     <li><a class="nav-link" href="{{ url_for('display_articles') }}">News</a></li>
                     <li><a class="nav-link" href="#">Fixtures</a></li>
                     {% if session.user %}
-                        <li><a class="nav-link" href="#">Players</a></li>
+                        <li><a class="nav-link" href="{{ url_for('display_players') }}">Players</a></li>
                         <li><a class="nav-link" href="{{ url_for('signout') }}">Sign Out</a></li>
                     {% else %}
                         <li><a class="nav-link" href="{{ url_for('signin') }}">Sign In</a></li>
@@ -37,7 +37,7 @@
           <ul class="sidenav" id="mobile-demo">
                 <li><a class="nav-link" href="{{ url_for('display_articles') }}">News</a></li>
                 <li><a class="nav-link" href="#">Fixtures</a></li>
-                <li><a class="nav-link" href="#">Players</a></li>
+                <li><a class="nav-link" href="{{ url_for('display_players') }}">Players</a></li>
                 <li><a class="nav-link" href="#">Contact Us</a></li>
                 <li><a class="nav-link" href="{{ url_for('signin') }}">Sign In</a></li>
                 <li><a class="nav-link" href="{{ url_for('signout') }}">Sign Out</a></li>

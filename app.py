@@ -24,6 +24,12 @@ def display_articles():
     articles = list(mongo.db.articles.find())
     return render_template("articles.html", articles=articles)
 
+
+@app.route("/display_players")
+def display_players():
+    return render_template("players.html")
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register_user():
     if request.method == "POST":
