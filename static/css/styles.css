@@ -49,6 +49,10 @@ html {
     object-fit: contain;
 }
 
+.button-icon {
+    margin-left: 1em;
+}
+
 /* News Page styling */
 
 .article-header {
