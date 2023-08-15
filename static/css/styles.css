@@ -41,6 +41,14 @@ html {
     text-align: center;
 }
 
+/* Players page styling */
+
+.profile-image {
+    width: 10rem;
+    height: 20rem;
+    object-fit: contain;
+}
+
 /* News Page styling */
 
 .article-header {
