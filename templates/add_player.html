@@ -9,10 +9,13 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
-                        <select id="player_position" name="player_position" class="validate" required>
-                            <option value="" disabled selected>Choose Position</option>
+                        <select id="position_name" name="position_name" class="validate" required>
+                            <option value="" disabled selected>Choose Category</option>
+                            {% for position in positions %}
+                                <option value="{{ position.position_name }}">{{ position.position_name }}</option>
+                            {% endfor %}
                         </select>
-                        <label for="player_position">Player Position</label>
+                        <label for="position_name">Player Position</label>
                     </div>
                 </div>
                 <!-- player name -->
@@ -28,7 +31,7 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
-                        <textarea id="player_height" name="player_height" minlength="3" maxlength="3"
+                        <textarea id="player_height" name="player_height" minlength="3" maxlength="5"
                             class="materialize-textarea validate" required></textarea>
                         <label for="player_height">Player Height (add cm to end)</label>
                     </div>
@@ -37,7 +40,7 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
-                        <textarea id="player_weight" name="player_weight" minlength="2" maxlength="4"
+                        <textarea id="player_weight" name="player_weight" minlength="2" maxlength="5"
                             class="materialize-textarea validate" required></textarea>
                         <label for="player_weight">Player Weight (add kg to end)</label>
                     </div>
@@ -73,7 +76,7 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
-                        <textarea id="player_profile" name="player_profile" minlength="3" maxlength="5"
+                        <textarea id="player_profile" name="player_profile" minlength="3" maxlength="500"
                             class="materialize-textarea validate" required></textarea>
                         <label for="player_profile">Paste imgur image link with file extension (e.g. .png, .jpg, etc.)</label>
                     </div>

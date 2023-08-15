@@ -33,7 +33,24 @@ def display_players():
 
 @app.route("/add_player", methods=["GET", "POST"])
 def add_player():
-    return render_template("add_player.html")
+    if request.method == "POST":
+        player = {
+            "position_name": request.form.get("position_name"),
+            "player_name": request.form.get("player_name"),
+            "player_height": request.form.get("player_height"),
+            "player_weight": request.form.get("player_weight"),
+            "player_points": request.form.get("player_points"),
+            "player_rebounds": request.form.get("player_rebounds"),
+            "player_assists": request.form.get("player_assists"),
+            "player_profile": request.form.get("player_profile"),
+        }
+        mongo.db.players.insert_one(player)
+        flash("Player Successfully Added")
+        return redirect(url_for("display_players"))
+
+    positions = mongo.db.positions.find()
+    return render_template("add_player.html", positions=positions)
+    return render_template("players.html")
 
 
 @app.route("/register", methods=["GET", "POST"])
