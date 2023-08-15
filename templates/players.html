@@ -2,7 +2,7 @@
 {% block content %}
     <h2 class="page-heading text-shadow">Players</h2>
     <div class="row center">
-        <a class="waves-effect waves-light btn green">Add Player<i class="fa-solid fa-square-plus button-icon"></i></a>
+        <a href="{{ url_for('add_player') }}" class="waves-effect waves-light btn green">Add Player<i class="fa-solid fa-square-plus button-icon"></i></a>
         <a class="waves-effect waves-light btn blue">Edit Player<i class="fa-regular fa-note-sticky button-icon"></i></a>
         <a class="waves-effect waves-light btn red">Delete Player<i class="fa-solid fa-ban button-icon"></i></a>
     </div>

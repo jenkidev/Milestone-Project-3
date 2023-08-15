@@ -31,6 +31,11 @@ def display_players():
     return render_template("players.html", players=players)
 
 
+@app.route("/add_player", methods=["GET", "POST"])
+def add_player():
+    return render_template("add_player.html")
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register_user():
     if request.method == "POST":
