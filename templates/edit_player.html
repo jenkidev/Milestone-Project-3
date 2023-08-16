@@ -4,15 +4,19 @@
 <h2 class="center">Edit Player</h2>
     <div class="row">
         <div class="card-panel col s12 m8 offset-m2">
-            <form class="col s12" method="POST" action="{{ url_for('add_player') }}">
+            <form class="col s12" method="POST" action="{{ url_for('edit_player', player_id=player._id) }}">
                 <!-- position selection -->
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
                         <select id="position_name" name="position_name" class="validate" required>
-                            <option value="" disabled selected>Choose Category</option>
+                            <option value="{{ position_name }}" disabled selected>Choose Category</option>
                             {% for position in positions %}
-                                <option value="{{ position.position_name }}">{{ position.position_name }}</option>
+                                {% if position.position_name == player.position_name %}
+                                    <option value="{{ position.position_name }}" selected>{{ position.position_name }}</option>
+                                {% else %}
+                                    <option value="{{ position.position_name }}">{{ position.position_name }}</option>
+                                {% endif %}
                             {% endfor %}
                         </select>
                         <label for="position_name">Player Position</label>
@@ -22,7 +26,8 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
-                        <input id="player_name" name="player_name" minlength="5" maxlength="50" type="text" class="validate"
+                        <input id="player_name" name="player_name" minlength="5" maxlength="50" type="text" 
+                        value="{{ player.player_name }}" class="validate"
                             required>
                         <label for="player_name">Player Name</label>
                     </div>
@@ -31,8 +36,8 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
-                        <textarea id="player_height" name="player_height" minlength="3" maxlength="5"
-                            class="materialize-textarea validate" required></textarea>
+                        <input id="player_height" name="player_height" minlength="3" maxlength="5" type="text"
+                        value="{{ player.player_height }}" class="validate" required>
                         <label for="player_height">Player Height (add cm to end)</label>
                     </div>
                 </div>
@@ -40,8 +45,8 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
-                        <textarea id="player_weight" name="player_weight" minlength="2" maxlength="5"
-                            class="materialize-textarea validate" required></textarea>
+                        <input id="player_weight" name="player_weight" minlength="2" maxlength="5" type="text"
+                        value="{{ player.player_weight }}" class="materialize-textarea validate" required>
                         <label for="player_weight">Player Weight (add kg to end)</label>
                     </div>
                 </div>
@@ -49,8 +54,8 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
-                        <textarea id="player_points" name="player_points" minlength="3" maxlength="5"
-                            class="materialize-textarea validate" required></textarea>
+                        <input id="player_points" name="player_points" minlength="3" maxlength="5" type="text"
+                        value="{{ player.player_points }}" class="materialize-textarea validate" required>
                         <label for="player_points">Last Season Point Average</label>
                     </div>
                 </div>
@@ -58,8 +63,8 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
-                        <textarea id="player_rebounds" name="player_rebounds" minlength="3" maxlength="5"
-                            class="materialize-textarea validate" required></textarea>
+                        <input id="player_rebounds" name="player_rebounds" minlength="3" maxlength="5" type="text"
+                        value="{{ player.player_rebounds }}" class="materialize-textarea validate" required>
                         <label for="player_rebounds">Last Season Rebound Average</label>
                     </div>
                 </div>
@@ -67,8 +72,8 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
-                        <textarea id="player_assists" name="player_assists" minlength="3" maxlength="5"
-                            class="materialize-textarea validate" required></textarea>
+                        <input id="player_assists" name="player_assists" minlength="3" maxlength="5" type="text"
+                        value="{{ player.player_assists }}" class="materialize-textarea validate" required>
                         <label for="player_assists">Last Season Assist Average</label>
                     </div>
                 </div>
@@ -76,8 +81,8 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
-                        <textarea id="player_profile" name="player_profile" minlength="3" maxlength="500"
-                            class="materialize-textarea validate" required></textarea>
+                        <input id="player_profile" name="player_profile" minlength="3" maxlength="500" type="text"
+                        value="{{ player.player_profile }}" class="materialize-textarea validate" required>
                         <label for="player_profile">Paste imgur image link with file extension (e.g. .png, .jpg, etc.)</label>
                     </div>
                 </div>

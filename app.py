@@ -55,6 +55,22 @@ def add_player():
 
 @app.route("/edit_player/<player_id>", methods=["GET", "POST"])
 def edit_player(player_id):
+    if request.method == "POST":
+        submit = {
+            "position_name": request.form.get("position_name"),
+            "player_name": request.form.get("player_name"),
+            "player_height": request.form.get("player_height"),
+            "player_weight": request.form.get("player_weight"),
+            "player_points": request.form.get("player_points"),
+            "player_rebounds": request.form.get("player_rebounds"),
+            "player_assists": request.form.get("player_assists"),
+            "player_profile": request.form.get("player_profile"),
+        }
+        mongo.db.players.update_one(
+            {"_id": ObjectId(player_id)}, {"$set": submit})
+        flash("Player Successfully Updated")
+        return redirect(url_for("display_players"))
+
     player = mongo.db.players.find_one({"_id": ObjectId(player_id)})
     positions = mongo.db.positions.find()
     return render_template("edit_player.html", player=player, positions=positions)
