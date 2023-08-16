@@ -53,6 +53,13 @@ def add_player():
     return render_template("players.html")
 
 
+@app.route("/edit_player/<player_id>", methods=["GET", "POST"])
+def edit_player(player_id):
+    player = mongo.db.players.find_one({"_id": ObjectId(player_id)})
+    positions = mongo.db.positions.find()
+    return render_template("edit_player.html", player=player, positions=positions)
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register_user():
     if request.method == "POST":

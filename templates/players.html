@@ -16,7 +16,7 @@
                     <span class="card-title activator grey-text text-darken-4">{{ player.position_name }}</span>
                     <p class="activator"><i class="fa-solid fa-caret-down right"></i>More Info</p>
                     {% if session.user|lower == "admin" %}
-                        <a href="{{ url_for('edit_player', player_id=player_id) }}" class="waves-effect waves-light btn blue">Edit Player<i class="fa-regular fa-note-sticky button-icon"></i></a>
+                        <a href="{{ url_for('edit_player', player_id=player._id) }}" class="waves-effect waves-light btn blue">Edit Player<i class="fa-regular fa-note-sticky button-icon"></i></a>
                         <a class="waves-effect waves-light btn red">Delete Player<i class="fa-solid fa-ban button-icon"></i></a>
                     {% endif %}
                 </div>
