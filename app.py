@@ -76,6 +76,13 @@ def edit_player(player_id):
     return render_template("edit_player.html", player=player, positions=positions)
 
 
+@app.route("/delete_player/<player_id>")
+def delete_player(player_id):
+    mongo.db.players.delete_one({"_id": ObjectId(player_id)})
+    flash("Player successfully deleted")
+    return redirect(url_for("display_players"))
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register_user():
     if request.method == "POST":
