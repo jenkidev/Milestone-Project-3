@@ -55,7 +55,6 @@ def add_player():
 
     positions = mongo.db.positions.find()
     return render_template("add_player.html", positions=positions)
-    return render_template("players.html")
 
 
 @app.route("/edit_player/<player_id>", methods=["GET", "POST"])
@@ -78,8 +77,8 @@ def edit_player(player_id):
 
     player = mongo.db.players.find_one({"_id": ObjectId(player_id)})
     positions = mongo.db.positions.find()
-    return render_template("edit_player.html", player=player, positions=
-    positions)
+    return render_template("edit_player.html", player=player,
+                           positions=positions)
 
 
 @app.route("/delete_player/<player_id>")
@@ -112,8 +111,7 @@ def add_fixture():
         flash("Fixture Successfully Added")
         return redirect(url_for("display_fixtures"))
 
-    return render_template("add_fixture.html")  
-    return render_template("fixtures.html")  
+    return render_template("add_fixture.html")
 
 
 @app.route("/edit_fixture/<fixture_id>", methods=["GET", "POST"])
@@ -185,10 +183,10 @@ def signin():
             # ensure password in database matches user input
             if check_password_hash(
                     existing_user["password"], request.form.get("password")):
-                        session["user"] = request.form.get("username").lower()
-                        flash("Welcome, {}".format(
-                            request.form.get("username")))
-                        return redirect(url_for("display_articles"))
+                session["user"] = request.form.get("username").lower()
+                flash("Welcome, {}".format(
+                    request.form.get("username")))
+                return redirect(url_for("display_articles"))
             else:
                 # invalid password match
                 flash("Incorrect Username and/or Password")
