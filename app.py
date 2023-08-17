@@ -59,6 +59,13 @@ def edit_article(article_id):
     return render_template("edit_article.html", article=article)
 
 
+@app.route("/delete_article/<article_id>")
+def delete_article(article_id):
+    mongo.db.articles.delete_one({"_id": ObjectId(article_id)})
+    flash("Article successfully deleted")
+    return redirect(url_for("display_articles"))
+
+
 @app.route("/display_players")
 def display_players():
     players = list(mongo.db.players.find())
@@ -112,7 +119,7 @@ def edit_player(player_id):
 
 @app.route("/delete_player/<player_id>")
 def delete_player(player_id):
-    mongo.db.players.delete_one({"_id": ObjectId(player_id)})
+    mongo.db.player.delete_one({"_id": ObjectId(player_id)})
     flash("Player successfully deleted")
     return redirect(url_for("display_players"))
 
