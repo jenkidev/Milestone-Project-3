@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2 class="center">Add Fixture</h2>
+    <div class="row">
+        <div class="card-panel col s12 m8 offset-m2">
+            <form class="col s12" method="POST" action="{{ url_for('add_fixture') }}">
+                <!-- Game Number -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
+                        <input id="game_number" name="game_number" minlength="1" maxlength="2" type="text" class="validate"
+                            required>
+                        <label for="game_number">Game Number</label>
+                    </div>
+                </div>
+                <!-- player name -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
+                        <input id="opponent" name="opponent" minlength="5" maxlength="50" type="text" class="validate"
+                            required>
+                        <label for="opponent">Opponent Name</label>
+                    </div>
+                </div>
+                <!-- player height -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                        <textarea id="home_away" name="home_away" minlength="4" maxlength="4"
+                            class="materialize-textarea validate" required></textarea>
+                        <label for="home_away">Home or Away</label>
+                    </div>
+                </div>
+                <!-- player weight -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                        <textarea id="location" name="location" minlength="5" maxlength="100"
+                            class="materialize-textarea validate" required></textarea>
+                        <label for="location">Location of Game</label>
+                    </div>
+                </div>
+                <!-- player point average -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                        <textarea id="time" name="time" minlength="5" maxlength="5"
+                            class="materialize-textarea validate" required></textarea>
+                        <label for="time">Tip-off Time</label>
+                    </div>
+                </div>
+                <!-- player rebound average -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                        <input id="eagles_score" name="eagles_score" minlength="1" maxlength="3" type="text"
+                        value="TBC" class="validate" required>
+                        <label for="eagles_score">Eagles Score</label>
+                    </div>
+                </div>
+                <!-- player assist average -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                        <input id="opponents_score" name="opponents_score" minlength="1" maxlength="3" type="text"
+                        value="TBC" class="validate" required>
+                        <label for="opponents_score">Opponents Score</label>
+                    </div>
+                </div>
+                <!-- player profile image -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                        <textarea id="date" name="date" minlength="3" maxlength="500"
+                            class="materialize-textarea validate" required></textarea>
+                        <label for="date">Date of the Game</label>
+                    </div>
+                </div>
+                
+                <!-- submit button -->
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <button type="submit" class="btn-large green text-shadow">
+                            Add Fixture <i class="fas fa-plus-square right"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

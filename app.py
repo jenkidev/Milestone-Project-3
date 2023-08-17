@@ -81,12 +81,17 @@ def delete_player(player_id):
     mongo.db.players.delete_one({"_id": ObjectId(player_id)})
     flash("Player successfully deleted")
     return redirect(url_for("display_players"))
-
+    
 
 @app.route("/display_fixtures")
 def display_fixtures():
     fixtures = list(mongo.db.fixtures.find())
     return render_template("fixtures.html", fixtures=fixtures)
+
+
+@app.route("/add_fixture", methods=["GET", "POST"])
+def add_fixture():
+    return render_template("add_fixture.html")    
 
 
 @app.route("/register", methods=["GET", "POST"])
