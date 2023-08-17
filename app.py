@@ -132,6 +132,14 @@ def edit_fixture(fixture_id):
     fixture = mongo.db.fixtures.find_one({"_id": ObjectId(fixture_id)})
     return render_template("edit_fixture.html", fixture=fixture)
 
+
+@app.route("/delete_fixture/<fixture_id>")
+def delete_fixture(fixture_id):
+    mongo.db.fixtures.delete_one({"_id": ObjectId(fixture_id)})
+    flash("Fixture successfully deleted")
+    return redirect(url_for("display_fixtures"))
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register_user():
     if request.method == "POST":
