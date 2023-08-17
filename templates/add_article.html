@@ -5,13 +5,40 @@
     <div class="row">
         <div class="card-panel col s12 m8 offset-m2">
             <form class="col s12" method="POST" action="{{ url_for('add_article') }}">
-                <!-- Game Number input -->
+                <!-- Article Heading input -->
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
                         <input id="article_heading" name="article_heading" minlength="10" maxlength="500" type="text" class="validate"
                             required>
                         <label for="article_heading">Article Heading</label>
+                    </div>
+                </div>
+                <!-- Article Date input -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                        <input id="article_date" name="article_date" type="text"
+                            class="datepicker validate" required>
+                        <label for="article_date">Date Posted</label>
+                    </div>
+                </div>
+                <!-- Article Content input -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
+                        <input id="article_content" name="article_content" minlength="10" maxlength="5000" type="text" class="validate"
+                            required>
+                        <label for="article_content">Article Content</label>
+                    </div>
+                </div>
+                <!-- Article author input -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
+                        <input id="article_author" name="article_author" minlength="10" maxlength="50" type="text" class="validate"
+                            required>
+                        <label for="article_author">Article Author</label>
                     </div>
                 </div>
                                 
