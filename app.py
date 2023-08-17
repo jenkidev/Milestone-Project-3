@@ -27,6 +27,17 @@ def display_articles():
 
 @app.route("/add_article", methods=["GET", "POST"])
 def add_article():
+    if request.method == "POST":
+        article = {
+            "heading": request.form.get("article_heading"),
+            "date": request.form.get("article_date"),
+            "content": request.form.get("article_content"),
+            "author": request.form.get("article_author"),
+        }
+        mongo.db.articles.insert_one(article)
+        flash("Article Successfully Posted")
+        return redirect(url_for("display_articles"))
+
     return render_template("add_article.html")
 
 
