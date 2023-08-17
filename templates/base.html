@@ -21,7 +21,7 @@
               <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
               <ul class="right hide-on-med-and-down">
                     <li><a class="nav-link" href="{{ url_for('display_articles') }}">News</a></li>
-                    <li><a class="nav-link" href="#">Fixtures</a></li>
+                    <li><a class="nav-link" href="{{ url_for('display_fixtures') }}">Fixtures</a></li>
                     {% if session.user %}
                         <li><a class="nav-link" href="{{ url_for('display_players') }}">Players</a></li>
                         <li><a class="nav-link" href="{{ url_for('signout') }}">Sign Out</a></li>
@@ -36,7 +36,7 @@
         
           <ul class="sidenav" id="mobile-demo">
                 <li><a class="nav-link" href="{{ url_for('display_articles') }}">News</a></li>
-                <li><a class="nav-link" href="#">Fixtures</a></li>
+                <li><a class="nav-link" href="{{ url_for('display_fixtures') }}">Fixtures</a></li>
                 <li><a class="nav-link" href="{{ url_for('display_players') }}">Players</a></li>
                 <li><a class="nav-link" href="#">Contact Us</a></li>
                 <li><a class="nav-link" href="{{ url_for('signin') }}">Sign In</a></li>

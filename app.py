@@ -83,6 +83,12 @@ def delete_player(player_id):
     return redirect(url_for("display_players"))
 
 
+@app.route("/display_fixtures")
+def display_fixtures():
+    fixtures = list(mongo.db.fixtures.find())
+    return render_template("fixtures.html", fixtures=fixtures)
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register_user():
     if request.method == "POST":

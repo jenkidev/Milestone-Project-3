@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+    {% for fixture in fixtures %}
+        {{ fixture.game }}<br>
+        {{ fixture.opponent }}<br>
+        {{ fixture.home_away }}<br>
+        {{ fixture.location }}<br>
+        {{ fixture.time }}<br>
+        {{ fixture.eagles_score }}<br>
+        {{ fixture.opponents_score }}<br>
+    {% endfor %}
+
+{% endblock %}
