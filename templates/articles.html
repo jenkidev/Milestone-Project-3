@@ -28,7 +28,7 @@
                 </row>
                 <row>
                     {% if session.user|lower == "admin" %}
-                        <a href="{{ url_for('edit_article') }}" class="waves-effect waves-light btn blue">Edit Article<i class="fa-regular fa-note-sticky button-icon"></i></a>
+                    <a href="{{ url_for('edit_article', article_id=article._id) }}" class="waves-effect waves-light btn blue">Edit Article<i class="fa-regular fa-note-sticky button-icon"></i></a>
                     {% endif %}    
                 </row>
             </div>

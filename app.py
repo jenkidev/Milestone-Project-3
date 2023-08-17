@@ -41,9 +41,22 @@ def add_article():
     return render_template("add_article.html")
 
 
-@app.route("/edit_article", methods=["GET", "POST"])
-def edit_article():
-    return render_template("edit_article.html")
+@app.route("/edit_article/<article_id>", methods=["GET", "POST"])
+def edit_article(article_id):
+    if request.method == "POST":
+        submit = {
+            "heading": request.form.get("article_heading"),
+            "date": request.form.get("article_date"),
+            "content": request.form.get("article_content"),
+            "author": request.form.get("article_author"),
+        }
+        mongo.db.articles.update_one(
+            {"_id": ObjectId(article_id)}, {"$set": submit})
+        flash("Player Successfully Updated")
+        return redirect(url_for("display_articles"))
+
+    article = mongo.db.articles.find_one({"_id": ObjectId(article_id)})
+    return render_template("edit_article.html", article=article)
 
 
 @app.route("/display_players")
