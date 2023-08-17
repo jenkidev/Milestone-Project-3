@@ -141,7 +141,7 @@ The website was tested on the following devices:
 
 | **Bug** | **Fix** |
 |---------|---------|
-
+When using the delete functionality for fixtures.html after selecting to delete on the confirmation modal a different collapsible selection would open and then get deleted as that was the active ID. | I am not sure why this happens as there is no trigger being clicked on I can only assume it is an interaction between the modal and collapsible classes of Materialize. Therefore in this case I have moved the delete fixture button to the edit_fixture.html page as this is only accessible to the admin and bypasses the bug.
 
 ## Deployment
 
