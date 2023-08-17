@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2 class="center">Add Article</h2>
+    <div class="row">
+        <div class="card-panel col s12 m8 offset-m2">
+            <form class="col s12" method="POST" action="{{ url_for('add_article') }}">
+                <!-- Game Number input -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
+                        <input id="article_heading" name="article_heading" minlength="10" maxlength="500" type="text" class="validate"
+                            required>
+                        <label for="article_heading">Article Heading</label>
+                    </div>
+                </div>
+                                
+                <!-- submit button -->
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <button type="submit" class="btn-large green text-shadow">
+                            Post Article <i class="fas fa-plus-square right"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

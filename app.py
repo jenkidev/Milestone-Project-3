@@ -81,7 +81,7 @@ def delete_player(player_id):
     mongo.db.players.delete_one({"_id": ObjectId(player_id)})
     flash("Player successfully deleted")
     return redirect(url_for("display_players"))
-    
+
 
 @app.route("/display_fixtures")
 def display_fixtures():
