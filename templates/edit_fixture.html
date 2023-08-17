@@ -1,16 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h2 class="center">Add Fixture</h2>
+<h2 class="center">Edit Fixture</h2>
     <div class="row">
         <div class="card-panel col s12 m8 offset-m2">
-            <form class="col s12" method="POST" action="{{ url_for('add_fixture') }}">
+            <form class="col s12" method="POST" action="{{ url_for('edit_fixture', fixture_id=fixture._id) }}">
                 <!-- Game Number input -->
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
                         <input id="game_number" name="game_number" minlength="1" maxlength="2" type="text" class="validate"
-                            required>
+                           value="{{ fixture.game }}" required>
                         <label for="game_number">Game Number</label>
                     </div>
                 </div>
@@ -19,7 +19,7 @@
                     <div class="input-field col s12">
                         <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
                         <input id="opponent" name="opponent" minlength="5" maxlength="50" type="text" class="validate"
-                            required>
+                        value="{{ fixture.opponent }}" required>
                         <label for="opponent">Opponent Name</label>
                     </div>
                 </div>
@@ -27,8 +27,8 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
-                        <textarea id="home_away" name="home_away" minlength="4" maxlength="4"
-                            class="materialize-textarea validate" required></textarea>
+                        <input id="home_away" name="home_away" minlength="4" maxlength="4" type="text" class="validate"
+                        value="{{ fixture.home_away }}" required>
                         <label for="home_away">Home or Away</label>
                     </div>
                 </div>
@@ -36,8 +36,8 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
-                        <textarea id="location" name="location" minlength="5" maxlength="100"
-                            class="materialize-textarea validate" required></textarea>
+                        <input id="location" name="location" minlength="5" maxlength="100" type="text"
+                        value="{{ fixture.location }}" class="validate" required>
                         <label for="location">Location of Game</label>
                     </div>
                 </div>
@@ -45,8 +45,8 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
-                        <textarea id="time" name="time" minlength="5" maxlength="5"
-                            class="materialize-textarea validate" required></textarea>
+                        <input id="time" name="time" minlength="5" maxlength="5" type="text"
+                           value="{{ fixture.time }}" class="validate" required>
                         <label for="time">Tip-off Time</label>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                     <div class="input-field col s12">
                         <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
                         <input id="eagles_score" name="eagles_score" minlength="1" maxlength="3" type="text"
-                        value="TBC" class="validate" required>
+                        value="{{ fixture.eagles_score }}" class="validate" required>
                         <label for="eagles_score">Eagles Score</label>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                     <div class="input-field col s12">
                         <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
                         <input id="opponent_score" name="opponent_score" minlength="1" maxlength="3" type="text"
-                        value="TBC" class="validate" required>
+                        value="{{ fixture.opponent_score }}" class="validate" required>
                         <label for="opponent_score">Opponents Score</label>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
                     <div class="input-field col s12">
                         <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
                         <input id="date" name="date" type="text"
-                            class="datepicker validate" required>
+                            value="{{ fixture.date }}" class="datepicker validate" required>
                         <label for="date">Date of the Game</label>
                     </div>
                 </div>
@@ -82,7 +82,7 @@
                 <div class="row">
                     <div class="col s12 center-align">
                         <button type="submit" class="btn-large green text-shadow">
-                            Add Fixture <i class="fas fa-plus-square right"></i>
+                            Edit Fixture <i class="fas fa-plus-square right"></i>
                         </button>
                     </div>
                 </div>

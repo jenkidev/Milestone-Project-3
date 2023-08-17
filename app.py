@@ -110,6 +110,28 @@ def add_fixture():
     return render_template("fixtures.html")  
 
 
+@app.route("/edit_fixture/<fixture_id>", methods=["GET", "POST"])
+def edit_fixture(fixture_id):
+    if request.method == "POST":
+        submit = {
+                "game": request.form.get("game_number"),
+                "opponent": request.form.get("opponent"),
+                "home_away": request.form.get("home_away"),
+                "location": request.form.get("location"),
+                "time": request.form.get("time"),
+                "eagles_score": request.form.get("eagles_score"),
+                "opponent_score": request.form.get("opponent_score"),
+                "date": request.form.get("date"),
+            }
+
+        mongo.db.fixtures.update_one(
+                {"_id": ObjectId(fixture_id)}, {"$set": submit})
+        flash("Fixture Successfully Updated")
+        return redirect(url_for("display_fixtures"))
+
+    fixture = mongo.db.fixtures.find_one({"_id": ObjectId(fixture_id)})
+    return render_template("edit_fixture.html", fixture=fixture)
+
 @app.route("/register", methods=["GET", "POST"])
 def register_user():
     if request.method == "POST":
