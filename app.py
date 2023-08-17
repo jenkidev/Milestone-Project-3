@@ -41,6 +41,11 @@ def add_article():
     return render_template("add_article.html")
 
 
+@app.route("/edit_article", methods=["GET", "POST"])
+def edit_article():
+    return render_template("edit_article.html")
+
+
 @app.route("/display_players")
 def display_players():
     players = list(mongo.db.players.find())
