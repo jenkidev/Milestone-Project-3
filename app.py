@@ -91,7 +91,23 @@ def display_fixtures():
 
 @app.route("/add_fixture", methods=["GET", "POST"])
 def add_fixture():
-    return render_template("add_fixture.html")    
+    if request.method == "POST":
+        fixture = {
+            "game": request.form.get("game_number"),
+            "opponent": request.form.get("opponent"),
+            "home_away": request.form.get("home_away"),
+            "location": request.form.get("location"),
+            "time": request.form.get("time"),
+            "eagles_score": request.form.get("eagles_score"),
+            "opponent_score": request.form.get("opponent_score"),
+            "date": request.form.get("date"),
+        }
+        mongo.db.fixtures.insert_one(fixture)
+        flash("Fixture Successfully Added")
+        return redirect(url_for("display_fixtures"))
+
+    return render_template("add_fixture.html")  
+    return render_template("fixtures.html")  
 
 
 @app.route("/register", methods=["GET", "POST"])

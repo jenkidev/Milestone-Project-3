@@ -3,5 +3,6 @@ $(document).ready(function(){
     $('select').formSelect();
     $('.modal').modal();
     $('.collapsible').collapsible();
+    $('.datepicker').datepicker();
   
 });
