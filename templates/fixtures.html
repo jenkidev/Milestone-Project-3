@@ -1,28 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
 
-<ul class="collapsible popout">
-    <li>
-      <div class="collapsible-header">First</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-    </li>
-    <li>
-      <div class="collapsible-header">Second</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-    </li>
-    <li>
-      <div class="collapsible-header">Third</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-    </li>
-  </ul>
-    {% for fixture in fixtures %}
-        {{ fixture.game }}<br>
-        {{ fixture.opponent }}<br>
-        {{ fixture.home_away }}<br>
-        {{ fixture.location }}<br>
-        {{ fixture.time }}<br>
-        {{ fixture.eagles_score }}<br>
-        {{ fixture.opponents_score }}<br>
-    {% endfor %}
+<h2>Fixtures</h2>
 
+    <ul class="collapsible popout">
+        {% for fixture in fixtures %}
+            <li>
+                <div class="collapsible-header">Game {{ fixture.game }}
+                    <span>: Vs. {{ fixture.opponent }}</span>
+                    <span>Score: Bridgend Eagles {{ fixture.eagles_score }} - {{ fixture.opponent_score }} {{ fixture.opponent }}</span>
+                    <span>{{ fixture.home_away }}</span>
+                    <span>Click for Date, Time and Location Details</span>
+                </div>
+                <div class="collapsible-body">
+                    <span>{{ fixture.location }}</span>
+                    <span>{{ fixture.time }}</span>
+                    <span>{{ fixture.date }}</span>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+        
 {% endblock %}
