@@ -1,56 +1,168 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Bridgend Eagles Team Website
+(by Morgan Jenkins)
 
-Welcome,
+## Table of Contents
 
-This is the Code Institute student template for the mongo lessons. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+1. [Project Goals](#project-goals)
+    1. [User Goals](#user-goals)
+    2. [Site Owner Goals](#site-owner-goals)
+2. [User Experience](#user-experience)
+    1. [Target Audience](#target-audience)
+    2. [User Requirements and Expectations](#user-requrements-and-expectations)
+    3. [User Stories](#user-stories)
+    4. [Scope](#scope)
+3. [Design of Site](#design-of-site)
+    1. [Initial Idea](#initial-idea)
+    2. [Wireframes](#wireframes)
+    3. [Site Layout](#site-layout)
+    4. [Colour Choices](#colour-choices)
+    5. [Fonts](#fonts)
+4. [Technologies Implemented](#technologies-implemented)
+    1. [Languages](#languages)
+    2. [Tools](#tools)
+5. [Site Features](#site-features)
+6. [Testing](#testing)
+    1. [Validation](#validation)
+        1. [HTML Validation](#html-validation)
+        2. [CSS Validation](#css-validation)
+        3. [JavaScript Validation](#javascript-validation)
+    2. [Performance and Accessibility](#performance-and-accessibility)
+    3. [Device Tests](#device-tests)
+    4. [Responsiveness](#responsiveness)
+    5. [User Story Tests](#user-story-tests)
+7. [Bug Squashing](#bug-squashing)
+8. [Deployment](#deployment)
+    * [Deploying to Github Pages](#deploying-to-github-pages)
+    * [Forking the githubrepository](#forking-the-github-repository)
+    * [Cloning the repository](#cloning-the-github-repository)
+9. [Credits](#credits)
+10. [Thank You](#thank-you)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **April 3rd, 2023**
 
-## Codeanywhere Reminders
+## Project Goals
 
-# IDE
+### User Goals
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose option 4.4 for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password *(will not echo **\*\*\*\*** *on screen)\*
+### Site Owner Goals
 
-#### Clear screen in Mongo Shell:
+## User Experience
 
-- `cls`
+### Target Audience
 
-#### Show all database collections:
 
-- `show collections`
+### User Requirements and Expectations
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
 
-`python3 -m http.server`
+### User Stories
+#### First-time User 
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+#### Returning User
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+#### Site Owner 
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Scope
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
----
+## Design of Site
 
-Happy coding!
+### Initial idea
+
+
+### Wireframes
+
+
+
+
+### Site Layout
+
+
+
+### Colour Choices
+
+
+### Fonts
+
+
+## Technologies Implemented
+
+### Languages
+
+### Tools
+
+## Site Features
+
+## Testing
+    
+### Validation
+
+#### HTML Validation- W3C markup validation service was used to assess the validity of my HTML code.
+
+
+
+
+#### CSS Validation- W3C CSS validation service was used to assess the validity of my CSS code
+
+
+
+#### JavaScript Validation- JS hint was used to assess the validity of my scripts
+
+
+
+### Performance and Accessibility
+
+Google Lighthouse as part of the Chrom dev tools was used to assess performance and accessibility.
+
+
+### Device Tests
+
+The website was tested on the following devices:
+* Samsung Galaxy M31
+* iPhone 12 Pro
+* Ipad Pro 4th Gen
+* Asus Vivobook laptop (X515JAB_X515JA)
+
+### Responsiveness
+
+[Responsinator](http://www.responsinator.com/?url=jenkidev.github.io%2FMilestone_project_2%2F) was used to assess the responsiveness of the project. 
+
+### User Story Tests
+
+#### First-time User 
+
+
+| **Feature Used** | **User Action** | **Expectation** | **Result** |
+| ---------------- | --------------- | --------------- | ---------- |
+
+
+## Bug Squashing
+
+| **Bug** | **Fix** |
+|---------|---------|
+
+
+## Deployment
+
+### Deploying to GitHub Pages
+
+
+
+### Forking the GitHub Repository
+
+
+
+### Cloning the GitHub Repository
+
+
+
+## Credits
+
+
+
+## Thank You
+
+* My mentor Antonio Rodriguez for his help and advice in creating this project.
+* To the team at [Code Institute](https://codeinstitute.net/) for the lessons and support.
+* My Partner for helping with project testing and supporting me through it.
