@@ -8,25 +8,25 @@
     {% for article in articles %}
     <div class="row">
         <div class="col s12">
-          <div class="card-panel light-green darken-1 text-shadow">
-            <row class="article-header">
-                <div class="article-header">
-                    <i class="fa-solid fa-newspaper left"></i>
-                    <span class="card-title">{{ article.heading.capitalize() }}</span>
-                </div>
-            </row>
-            <row>
-                <div>
-                    <span class="white-text article-content">{{ article.content }}</span>
-                </div>
-            </row>
-            <row>
-                <div class="news-info">
-                    <span class="white-text">Author: {{ article.author.capitalize() }}</span>
-                    <span class="white-text right">Posted: {{ article.date }}</span>
-                </div>
-            </row>
-          </div>
+            <div class="card-panel light-green darken-1 text-shadow">
+                <row class="article-header">
+                    <div class="article-header">
+                        <i class="fa-solid fa-newspaper left"></i>
+                        <span class="card-title">{{ article.heading.capitalize() }}</span>
+                    </div>
+                </row>
+                <row>
+                    <div>
+                        <span class="white-text article-content">{{ article.content }}</span>
+                    </div>
+                </row>
+                <row>
+                    <div class="news-info">
+                        <span class="white-text">Author: {{ article.author.capitalize() }}</span>
+                        <span class="white-text right">Posted: {{ article.date }}</span>
+                    </div>
+                </row>
+            </div>
         </div>
       </div>
     {% endfor %}
