@@ -237,6 +237,11 @@ def signout():
     return redirect(url_for("signin"))
 
 
+@app.route("/contact_page")
+def contact_page():
+    return render_template("contact_us.html")
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
