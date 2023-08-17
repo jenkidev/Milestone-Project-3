@@ -25,6 +25,11 @@ def display_articles():
     return render_template("articles.html", articles=articles)
 
 
+@app.route("/add_article", methods=["GET", "POST"])
+def add_article():
+    return render_template("add_article.html")
+
+
 @app.route("/display_players")
 def display_players():
     players = list(mongo.db.players.find())
@@ -73,7 +78,8 @@ def edit_player(player_id):
 
     player = mongo.db.players.find_one({"_id": ObjectId(player_id)})
     positions = mongo.db.positions.find()
-    return render_template("edit_player.html", player=player, positions=positions)
+    return render_template("edit_player.html", player=player, positions=
+    positions)
 
 
 @app.route("/delete_player/<player_id>")

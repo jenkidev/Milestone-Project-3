@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
     <h2 class="page-heading text-shadow">News</h2>
+    <div class="row center">
+        <a href="{{ url_for('add_article') }}" class="waves-effect waves-light btn green">Add article<i class="fa-solid fa-square-plus button-icon"></i></a>
+    </div>
 
     {% for article in articles %}
     <div class="row">
