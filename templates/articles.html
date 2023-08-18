@@ -8,11 +8,11 @@
     {% for article in articles %}
     <div class="row">
         <div class="col s12">
-            <div class="card-panel light-green darken-1 text-shadow">
+            <div class="card-panel blue darken-4 text-shadow">
                 <row class="article-header">
                     <div class="article-header">
-                        <i class="fa-solid fa-newspaper left"></i>
-                        <span class="card-title">{{ article.heading.capitalize() }}</span>
+                        <i class="fa-solid fa-newspaper left white-text"></i>
+                        <span class="white-text card-title">{{ article.heading.title() }}</span>
                     </div>
                 </row>
                 <row>
