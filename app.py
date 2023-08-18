@@ -52,7 +52,7 @@ def edit_article(article_id):
         }
         mongo.db.articles.update_one(
             {"_id": ObjectId(article_id)}, {"$set": submit})
-        flash("Player Successfully Updated")
+        flash("Article Successfully Updated")
         return redirect(url_for("display_articles"))
 
     article = mongo.db.articles.find_one({"_id": ObjectId(article_id)})
