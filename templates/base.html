@@ -39,11 +39,14 @@
           <ul class="sidenav" id="mobile-demo">
                 <li><a class="nav-link" href="{{ url_for('display_articles') }}">News</a></li>
                 <li><a class="nav-link" href="{{ url_for('display_fixtures') }}">Fixtures</a></li>
-                <li><a class="nav-link" href="{{ url_for('display_players') }}">Players</a></li>
+                {% if session.user %}
+                    <li><a class="nav-link" href="{{ url_for('display_players') }}">Players</a></li>
+                    <li><a class="nav-link" href="{{ url_for('signout') }}">Sign Out</a></li>
+                {% else %}
+                    <li><a class="nav-link" href="{{ url_for('signin') }}">Sign In</a></li>
+                    <li><a class="nav-link" href="{{ url_for('register_user') }}">Register</a></li>
+                {% endif %}
                 <li><a class="nav-link" href="{{ url_for('contact_page') }}">Contact Us</a></li>
-                <li><a class="nav-link" href="{{ url_for('signin') }}">Sign In</a></li>
-                <li><a class="nav-link" href="{{ url_for('signout') }}">Sign Out</a></li>
-                <li><a class="nav-link" href="{{ url_for('register_user') }}">Register</a></li>
           </ul>
     </header>
 
