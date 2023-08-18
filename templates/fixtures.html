@@ -10,11 +10,11 @@
     <ul class="collapsible popout white-text">
         {% for fixture in fixtures %}
             <li>
-                <div class="collapsible-header blue darken-4 text-shadow">Game {{ fixture.game }}
-                    <span>: Vs. {{ fixture.opponent }}</span>
-                    <span>Score: Bridgend Eagles {{ fixture.eagles_score }} - {{ fixture.opponent_score }} {{ fixture.opponent }}</span>
-                    <span>{{ fixture.home_away }}</span>
-                    <span>Click for Date, Time and Location Details</span>
+                <div class="fixture-list collapsible-header blue darken-4 text-shadow">Game {{ fixture.game }}:
+                    <span class="fixture-list">Vs. {{ fixture.opponent }}</span>
+                    <span class="fixture-list">Score: Bridgend Eagles {{ fixture.eagles_score }} - {{ fixture.opponent_score }} {{ fixture.opponent }}</span>
+                    <span class="fixture-list">{{ fixture.home_away }}</span>
+                    <span class="fixture-list">Click for Date, Time and Location Details</span>
                     {% if session.user|lower == "admin" %}
                         <div class="edit-button">
                             <a href="{{ url_for('edit_fixture', fixture_id=fixture._id) }}" class="edit-button waves-effect waves-light btn blue">Edit Fixture<i class="fa-regular fa-note-sticky button-icon"></i></a>

@@ -86,8 +86,13 @@ html {
 
 /* Fixtures Page styling */
 
+.fixture-list {
+    margin: auto;
+}
+
 .edit-button {
     margin-left: auto;
+    font-size: 1em;
 }
 
 /* Register Page styling */
