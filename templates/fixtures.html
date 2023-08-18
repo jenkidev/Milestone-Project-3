@@ -16,8 +16,10 @@
                     <span>{{ fixture.home_away }}</span>
                     <span>Click for Date, Time and Location Details</span>
                     {% if session.user|lower == "admin" %}
-                        <a href="{{ url_for('edit_fixture', fixture_id=fixture._id) }}" class="waves-effect waves-light btn blue">Edit Fixture<i class="fa-regular fa-note-sticky button-icon"></i></a>
-                    {% endif %}
+                        <div class="edit-button">
+                            <a href="{{ url_for('edit_fixture', fixture_id=fixture._id) }}" class="edit-button waves-effect waves-light btn blue">Edit Fixture<i class="fa-regular fa-note-sticky button-icon"></i></a>
+                        </div>    
+                        {% endif %}
                 </div>
                 <div class="collapsible-body blue darken-4 text-shadow">
                     <span>{{ fixture.location }}</span>

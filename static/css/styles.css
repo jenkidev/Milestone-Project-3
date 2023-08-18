@@ -84,6 +84,12 @@ html {
     margin-top: 4em;
 }
 
+/* Fixtures Page styling */
+
+.edit-button {
+    margin-left: auto;
+}
+
 /* Register Page styling */
 
 .register-card {
