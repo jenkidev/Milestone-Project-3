@@ -1,4 +1,44 @@
 {% extends 'base.html' %}
 {% block content %}
 
+<h2 class="center">Contact Us</h2>
+<h4 class="center">If you have any questions, queries or requirements then drop us an email below and we will get back to you as soon as we can.</h4>
+<div class="row">
+    <div class="card-panel col s12 m8 offset-m2">
+        <form class="col s12" method="POST" action="{{ url_for('display_articles') }}">
+            <div class="input-field col s6">
+                <i class="fa-solid fa-user prefix"></i>
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fa-solid fa-address-book prefix"></i>
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-pencil-alt prefix"></i>
+                    <input id="article_content" name="article_content" minlength="10" maxlength="5000" type="text" class="validate"
+                        required>
+                    <label for="article_content">Tell Us About Yourself</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 center-align">
+                    <button type="submit" class="btn-large green text-shadow">
+                        Send Email <i class="fa-solid fa-envelope right"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
 {% endblock %}
