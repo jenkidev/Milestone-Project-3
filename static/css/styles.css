@@ -11,6 +11,15 @@ html {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
+.background-picture{
+    background-image: linear-gradient(to bottom, rgba(50, 50, 50, 1.0), rgba(50, 50, 50, 0)),  
+    url("/../static/images/page_background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 /* Nav bar Styling */
 
 .nav-wrapper {
