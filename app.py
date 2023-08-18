@@ -126,7 +126,7 @@ def delete_player(player_id):
 
 @app.route("/display_fixtures")
 def display_fixtures():
-    fixtures = list(mongo.db.fixtures.find())
+    fixtures = list(mongo.db.fixtures.find().sort("game", 1))
     return render_template("fixtures.html", fixtures=fixtures)
 
 
