@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h2 class="center">Edit Player</h2>
+<h2 class="page-heading text-shadow">Edit Player</h2>
     <div class="row">
         <div class="card-panel col s12 m8 offset-m2">
             <form class="col s12" method="POST" action="{{ url_for('edit_player', player_id=player._id) }}">
