@@ -142,7 +142,7 @@ footer {
     margin-bottom: 1em;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .fixtures{
         font-size: 0.7em;
     }
