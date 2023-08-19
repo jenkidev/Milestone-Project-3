@@ -90,8 +90,12 @@ html {
     margin: auto;
 }
 
+.fixture-list-sub {
+    margin-right: 2em;
+}
+
 .edit-button {
-    margin-left: auto;
+    margin: auto;
     font-size: 1em;
 }
 
@@ -136,6 +140,17 @@ footer {
     width: 33%;
     font-size: 2em;
     margin-bottom: 1em;
+}
+
+@media screen and (max-width: 400px) {
+    .fixtures{
+        font-size: 0.7em;
+    }
+
+    .mobile-edit-button{
+        
+    }
+    
 }
 
 @media screen and (min-width: 992px) {

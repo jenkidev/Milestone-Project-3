@@ -7,25 +7,27 @@
     <a href="{{ url_for('add_fixture') }}" class="waves-effect waves-light btn green">Add Fixture<i class="fa-solid fa-square-plus button-icon"></i></a>
 </div>
 
-    <ul class="collapsible popout white-text">
+    <ul class="fixtures collapsible popout white-text">
         {% for fixture in fixtures %}
             <li>
-                <div class="fixture-list collapsible-header blue darken-4 text-shadow">Game {{ fixture.game }}:
-                    <span class="fixture-list">Vs. {{ fixture.opponent }}</span>
-                    <span class="fixture-list">Score: Bridgend Eagles {{ fixture.eagles_score }} - {{ fixture.opponent_score }} {{ fixture.opponent }}</span>
-                    <span class="fixture-list">{{ fixture.home_away }}</span>
-                    <span class="fixture-list">Click for Date, Time and Location Details</span>
-                    {% if session.user|lower == "admin" %}
-                        <div class="edit-button">
-                            <a href="{{ url_for('edit_fixture', fixture_id=fixture._id) }}" class="edit-button waves-effect waves-light btn blue">Edit Fixture<i class="fa-regular fa-note-sticky button-icon"></i></a>
-                        </div>    
-                        {% endif %}
+                <div class="row">
+                    <div class="fixture-list collapsible-header blue darken-4 text-shadow">Game {{ fixture.game }}:
+                        <span class="col s2 fixture-list">Vs. {{ fixture.opponent }}</span>
+                        <span class="col s2 fixture-list">Score: Bridgend Eagles {{ fixture.eagles_score }} - {{ fixture.opponent_score }} {{ fixture.opponent }}</span>
+                        <span class="col s2 fixture-list">{{ fixture.home_away }}</span>
+                        <span class="col s2 fixture-list">Click for Date, Time and Location Details</span>
+                        {% if session.user|lower == "admin" %}
+                            <div class="edit-button">
+                                <a href="{{ url_for('edit_fixture', fixture_id=fixture._id) }}" class="fixtures mobile-edit-button edit-button waves-effect waves-light btn-small blue">Edit</a>
+                            </div>    
+                            {% endif %}
+                    </div>
                 </div>
-                <div class="collapsible-body blue darken-4 text-shadow">
-                    <span>{{ fixture.location }}</span>
-                    <span>{{ fixture.time }}</span>
-                    <span>{{ fixture.date }}</span>
-                </div>
+                    <div class="collapsible-body blue darken-4 text-shadow">
+                        <span class="fixture-list-sub">{{ fixture.time }}</span>
+                        <span class="fixture-list-sub">{{ fixture.date }}</span>
+                        <span class="fixture-list-sub">@ {{ fixture.location }}</span>
+                    </div>
             </li>
         {% endfor %}
     </ul>
