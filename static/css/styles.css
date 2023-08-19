@@ -95,7 +95,7 @@ html {
 }
 
 .edit-button {
-    margin: auto;
+    margin: 1em;
     font-size: 1em;
 }
 
@@ -146,7 +146,6 @@ footer {
     .fixtures{
         font-size: 0.7em;
     }
-    
 }
 
 @media screen and (min-width: 992px) {
