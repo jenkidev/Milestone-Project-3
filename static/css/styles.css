@@ -38,7 +38,7 @@ html {
 /* Flash Message styling */
 
 .flash-message {
-    background: green;
+    background: darkblue;
     color: white;
     line-height: 2;
 }
