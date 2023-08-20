@@ -5,6 +5,8 @@
         <a href="{{ url_for('add_player') }}" class="waves-effect waves-light btn green">Add Player<i class="fa-solid fa-square-plus button-icon"></i></a>
     </div>
     <div class="row">
+
+        <!--Card to display players-->
         {% for player in players %}
         <div class="col s12 m6 l3">
             <div class="card">
