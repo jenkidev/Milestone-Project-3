@@ -1,14 +1,23 @@
 $(document).ready(function(){
+    //Initialise sidenav
     $(".sidenav").sidenav({edge: "right"});
+    
+    //Initialise form select
     $('select').formSelect();
+    
+    //Initialise modal
     $('.modal').modal();
+    
+    //Initialise collapsible card
     $('.collapsible').collapsible();
+    
+    //Initialise datepicker
     $('.datepicker').datepicker();
   
 });
 
 
-/* Script for sending email through email.js*/
+// Script for sending email through email.js
 const form = document.getElementById("contactForm");
 
 function sendMail(contactForm) {
