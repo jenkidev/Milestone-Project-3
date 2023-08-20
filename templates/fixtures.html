@@ -2,11 +2,11 @@
 {% block content %}
 
 <h2 class="page-heading text-shadow">Fixtures</h2>
-
+<!--Button to add fixture-->
 <div class="row center">
     <a href="{{ url_for('add_fixture') }}" class="waves-effect waves-light btn green">Add Fixture<i class="fa-solid fa-square-plus button-icon"></i></a>
 </div>
-
+    <!--collapsible accordion to display fixtures-->
     <ul class="fixtures collapsible popout white-text">
         {% for fixture in fixtures %}
             <li>
