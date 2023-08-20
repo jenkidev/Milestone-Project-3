@@ -2,9 +2,11 @@
 {% block content %}
     <h2 class="page-heading text-shadow">News</h2>
     <!--Button to add article-->
+    {% if session.user|lower == "admin" %}
     <div class="row center">
         <a href="{{ url_for('add_article') }}" class="waves-effect waves-light btn green">Add article<i class="fa-solid fa-square-plus button-icon"></i></a>
     </div>
+    {% endif %}
 
     <!--Card to display article and its contents-->
     {% for article in articles %}
