@@ -17,6 +17,7 @@
 </head>
 <body class="background-picture">
     <header>
+        <!--Main navigation bar-->
         <nav class="nav-extended text-shadow blue lighten-1">
             <div class="nav-wrapper">
               <a href="{{ url_for('display_articles') }}" class="heading-margin brand-logo"><img class="logo" src="../static/images/eagles_logo_3.png"></a>
@@ -35,22 +36,22 @@
               </ul>
             </div>
           </nav>
-        
-          <ul class="sidenav" id="mobile-demo">
-                <li><a class="nav-link" href="{{ url_for('display_articles') }}">News</a></li>
-                <li><a class="nav-link" href="{{ url_for('display_fixtures') }}">Fixtures</a></li>
-                {% if session.user %}
-                    <li><a class="nav-link" href="{{ url_for('display_players') }}">Players</a></li>
-                    <li><a class="nav-link" href="{{ url_for('signout') }}">Sign Out</a></li>
-                {% else %}
-                    <li><a class="nav-link" href="{{ url_for('signin') }}">Sign In</a></li>
-                    <li><a class="nav-link" href="{{ url_for('register_user') }}">Register</a></li>
-                {% endif %}
-                <li><a class="nav-link" href="{{ url_for('contact_page') }}">Contact Us</a></li>
-          </ul>
+            <!--Mobile responsive navigation bar-->
+            <ul class="sidenav" id="mobile-demo">
+                    <li><a class="nav-link" href="{{ url_for('display_articles') }}">News</a></li>
+                    <li><a class="nav-link" href="{{ url_for('display_fixtures') }}">Fixtures</a></li>
+                    {% if session.user %}
+                        <li><a class="nav-link" href="{{ url_for('display_players') }}">Players</a></li>
+                        <li><a class="nav-link" href="{{ url_for('signout') }}">Sign Out</a></li>
+                    {% else %}
+                        <li><a class="nav-link" href="{{ url_for('signin') }}">Sign In</a></li>
+                        <li><a class="nav-link" href="{{ url_for('register_user') }}">Register</a></li>
+                    {% endif %}
+                    <li><a class="nav-link" href="{{ url_for('contact_page') }}">Contact Us</a></li>
+            </ul>
     </header>
 
-    <section>
+    <div>
         <!-- flash messages -->
         {% with messages = get_flashed_messages() %}
             {% if messages %}
@@ -61,12 +62,12 @@
                 {% endfor %}
             {% endif %}
         {% endwith %}
-    </section>
+    </div>
 
 
     {% block content %}
     {% endblock %}
-
+    <!--Footer with social links and training times-->
     <footer class="blue lighten-1 white-text text-shadow">
         <row>
             <div class="text-shadow footer-heading">Bridgend Eagles</div>
