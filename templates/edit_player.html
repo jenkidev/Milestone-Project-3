@@ -9,7 +9,7 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
-                        <select id="position_name" name="position_name" class="validate" required>
+                        <select id="position_name" name="position_name" attribute="multiple" class="validate" required>
                             <option value="{{ position_name }}" disabled selected>Choose Category</option>
                             {% for position in positions %}
                                 {% if position.position_name == player.position_name %}
