@@ -5,6 +5,12 @@
     <div class="row">
         <div class="card-panel col s12 m8 offset-m2">
             <form class="col s12" method="POST" action="{{ url_for('edit_player', player_id=player._id) }}">
+                <!--Cancel button-->
+                <div class="row">
+                    <div class="right cancel-link">
+                        <a href="{{ url_for('display_players')}}">Cancel <i class="fa-solid fa-xmark"></i></a>
+                    </div>
+                </div>
                 <!-- position selection -->
                 <div class="row">
                     <div class="input-field col s12">
