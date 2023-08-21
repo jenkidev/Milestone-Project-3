@@ -21,13 +21,14 @@ mongo = PyMongo(app)
 # 404 error app
 @app.errorhandler(404)
 def not_found(e):
-  return render_template("404.html"), 404
+    return render_template("404.html"), 404
 
 
 # 500 error app
 @app.errorhandler(500)
 def internal_server_error(e):
     return render_template("500.html"), 500
+
 
 @app.route("/")
 @app.route("/display_articles")
@@ -258,6 +259,11 @@ def signout():
 @app.route("/contact_page")
 def contact_page():
     return render_template("contact_us.html")
+
+
+@app.route('/simulate-500') 
+def simulate_500(): 
+    return render_template("500.html")
 
 
 if __name__ == "__main__":
