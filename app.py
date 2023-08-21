@@ -21,7 +21,13 @@ mongo = PyMongo(app)
 # 404 error app
 @app.errorhandler(404)
 def not_found(e):
-  return render_template("404.html")
+  return render_template("404.html"), 404
+
+
+# 500 error app
+@app.errorhandler(500)
+def internal_server_error(e):
+    return render_template("500.html"), 500
 
 @app.route("/")
 @app.route("/display_articles")
