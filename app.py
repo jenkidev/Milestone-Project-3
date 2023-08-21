@@ -261,11 +261,6 @@ def contact_page():
     return render_template("contact_us.html")
 
 
-@app.route('/simulate-500') 
-def simulate_500(): 
-    return render_template("500.html")
-
-
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
