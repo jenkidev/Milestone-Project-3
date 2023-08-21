@@ -126,6 +126,13 @@ html {
     background-color:aliceblue;
 }
 
+/* Cancel styling */
+
+.cancel-link{
+    font-size: 2em;
+    margin: 1em 1em 0em 0em;
+}
+
 /* Footer Styling */
 
 footer {
