@@ -57,6 +57,27 @@ html {
     margin: 2em 2em;
 }
 
+/* Error page styling */
+
+.error-page-heading {
+    text-decoration: underline;
+}
+
+.error-icon{
+    font-size: 5em;
+    margin-top: 1em;
+    align-items: center;
+}
+
+.error-page-paragraph {
+    font-size: 2em;
+    margin-top: 2em;
+}
+
+.error-button {
+    margin-top: 2em;
+}
+
 /* Players page styling */
 
 .profile-image {
@@ -145,6 +166,12 @@ footer {
 @media screen and (max-width: 450px) {
     .fixtures{
         font-size: 0.7em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .error-card {
+        height: 40em;
     }
 }
 
