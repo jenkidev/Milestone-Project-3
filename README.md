@@ -125,6 +125,7 @@ The scope of the project in it’s first release is defined by the following fea
 
 ### Initial idea
 
+The main purpose of this site was to create a front end that would display collections from MongoDB. I decided to create a fake basketball team called the Bridgend Eagles (my local town). The Database would display news articles, players and fixtures of the team. An admin account would have permissions to update, delete and create new records. It would be fully responsive for desktop, tablet and mobile and would have a connection to the emailJS API to allow users to contact the site owner.
 
 ### Wireframes
 
@@ -156,13 +157,26 @@ To create the wireframes for this site I used the balsamiq cloud service. This a
 
 ### Site Layout
 
+The Site will have four main pages and these will be the news page, fixtures page, players page and contact page. These pages will be accessed via a nav bar at the top of the page. There will be two other sub pages a registration page and a sign in page and one more link in the nav bar where users can sign out.
+
+#### News Page- 
+
+#### Fixtures Page- 
+
+#### Players Page-
+
+#### Contact Page
+
+#### SignIn and Registration Pages-
+
+#### Sign Out Link- 
 
 
 ### Colour Choices
 
 
 ### Fonts
-
+The font used for the site is the "Exo" font as this had quite a bold and easy to read style whilst also being curved, thus giving the website an approachable feel.
 
 ## Technologies Implemented
 
@@ -208,11 +222,137 @@ The website was tested on the following devices:
 
 ### User Story Tests
 
-#### First-time User 
+1. I want to view news relevant to the Bridgend Eagles basketball team.
 
 
 | **Feature Used** | **User Action** | **Expectation** | **Result** |
 | ---------------- | --------------- | --------------- | ---------- |
+|  |  |  |  |
+
+2. I want to view the fixtures for the Bridgend Eagles basketball team.
+
+| **Feature Used** | **User Action** | **Expectation** | **Result** |
+| ---------------- | --------------- | --------------- | ---------- |
+|  |  |  |  |
+
+3. I want to see the training times for team.
+
+| **Feature Used** | **User Action** | **Expectation** | **Result** |
+| ---------------- | --------------- | --------------- | ---------- |
+|  |  |  |  |
+
+4. I want to contact the team via email.
+
+| **Feature Used** | **User Action** | **Expectation** | **Result** |
+| ---------------- | --------------- | --------------- | ---------- |
+|  |  |  |  |
+
+5. I want to register as a user to the site.
+
+| **Feature Used** | **User Action** | **Expectation** | **Result** |
+| ---------------- | --------------- | --------------- | ---------- |
+|  |  |  |  |
+
+6. I want to view social media relevant to the team.
+
+| **Feature Used** | **User Action** | **Expectation** | **Result** |
+| ---------------- | --------------- | --------------- | ---------- |
+|  |  |  |  |
+
+
+#### Returning User
+
+7. I want to view the fixtures for the Bridgend Eagles basketball team.
+
+| **Feature Used** | **User Action** | **Expectation** | **Result** |
+| ---------------- | --------------- | --------------- | ---------- |
+|  |  |  |  |
+
+8. I want to see the training times for team.
+
+| **Feature Used** | **User Action** | **Expectation** | **Result** |
+| ---------------- | --------------- | --------------- | ---------- |
+|  |  |  |  |
+
+9. I want to sign into the site using a created account.
+
+| **Feature Used** | **User Action** | **Expectation** | **Result** |
+| ---------------- | --------------- | --------------- | ---------- |
+|  |  |  |  |
+
+10. I want to view the players on the team and their statistics.
+
+| **Feature Used** | **User Action** | **Expectation** | **Result** |
+| ---------------- | --------------- | --------------- | ---------- |
+|  |  |  |  |
+
+#### Site Owner 
+
+11. I want to add new articles.
+
+| **Feature Used** | **User Action** | **Expectation** | **Result** |
+| ---------------- | --------------- | --------------- | ---------- |
+|  |  |  |  |
+
+12. I want to edit existing articles.
+
+| **Feature Used** | **User Action** | **Expectation** | **Result** |
+| ---------------- | --------------- | --------------- | ---------- |
+|  |  |  |  |
+
+13. I want to delete an article.
+
+| **Feature Used** | **User Action** | **Expectation** | **Result** |
+| ---------------- | --------------- | --------------- | ---------- |
+|  |  |  |  |
+
+14. I want to add new fixtures.
+
+| **Feature Used** | **User Action** | **Expectation** | **Result** |
+| ---------------- | --------------- | --------------- | ---------- |
+|  |  |  |  |
+
+15. I want to edit existing fixtures.
+
+| **Feature Used** | **User Action** | **Expectation** | **Result** |
+| ---------------- | --------------- | --------------- | ---------- |
+|  |  |  |  |
+
+16. I want to delete an fixture.
+
+| **Feature Used** | **User Action** | **Expectation** | **Result** |
+| ---------------- | --------------- | --------------- | ---------- |
+|  |  |  |  |
+
+17. I want to add new players.
+
+| **Feature Used** | **User Action** | **Expectation** | **Result** |
+| ---------------- | --------------- | --------------- | ---------- |
+|  |  |  |  |
+
+18. I want to edit existing players.
+
+| **Feature Used** | **User Action** | **Expectation** | **Result** |
+| ---------------- | --------------- | --------------- | ---------- |
+|  |  |  |  |
+
+19. I want to delete an player.
+
+| **Feature Used** | **User Action** | **Expectation** | **Result** |
+| ---------------- | --------------- | --------------- | ---------- |
+|  |  |  |  |
+
+20. I want to sign into an account with admin permissions.
+
+| **Feature Used** | **User Action** | **Expectation** | **Result** |
+| ---------------- | --------------- | --------------- | ---------- |
+|  |  |  |  |
+
+21. I want to receive emails from users that fill out the relevant form.
+
+| **Feature Used** | **User Action** | **Expectation** | **Result** |
+| ---------------- | --------------- | --------------- | ---------- |
+|  |  |  |  |
 
 
 ## Bug Squashing
