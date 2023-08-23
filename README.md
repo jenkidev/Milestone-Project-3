@@ -17,6 +17,8 @@
     3. [Site Layout](#site-layout)
     4. [Colour Choices](#colour-choices)
     5. [Fonts](#fonts)
+    6. [Database Structure](#database-structure)
+    7. [MongoDB Collection](#mongodb-collections)
 4. [Technologies Implemented](#technologies-implemented)
     1. [Languages](#languages)
     2. [Tools](#tools)
@@ -107,6 +109,17 @@
 
 ## Scope
 
+The scope of the project in it’s first release is defined by the following features:
+
+* Landing page with a clear navigation menu that can take unregistered users to News, Fixtures and a Contact form.
+* Site must connect to MongoDB and display documents from the collection in a clear front end manner.
+* Registered users can see player information. This protects personal information from unregistered users.
+* Admin account is able to interact with all database information displayed using CRUD functionality.
+* Allow User to sign in to the site or register if they are not already.
+* Fully functional contact form with emailJS that will not submit unless all fields are filled out.
+* A 404 error page that is styled and allows navigation back to the main page.
+* A 500 error page in the event of a server error that is fully styled and directs back to the main page.
+* Clear favicon that shows the site logo.
 
 ## Design of Site
 
