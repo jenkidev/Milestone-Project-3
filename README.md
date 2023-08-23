@@ -86,9 +86,24 @@
 
 #### Returning User
 
+2. I want to view the fixtures for the Bridgend Eagles basketball team.
+3. I want to see the training times for team.
+7. I want to sign into the site using a created account.
+8. I want to view the players on the team and their statistics.
 
 #### Site Owner 
 
+9. I want to add new articles.
+10. I want to edit existing articles.
+11. I want to delete an article.
+12. I want to add new fixtures.
+13. I want to edit existing fixtures.
+14. I want to delete an fixture.
+15. I want to add new players.
+16. I want to edit existing players.
+17. I want to delete an player.
+18. I want to sign into an account with admin permissions.
+19. I want to receive emails from users that fill out the relevant form.
 
 ## Scope
 
