@@ -2,7 +2,7 @@
 {% block content %}
     <h2 class="page-heading text-shadow">Players</h2>
     <div class="row center">
-        {% if user.session|lower == "admin" %}
+        {% if session.user|lower == "admin" %}
             <a href="{{ url_for('add_player') }}" class="waves-effect waves-light btn green">Add Player<i class="fa-solid fa-square-plus button-icon"></i></a>
         {% endif %}
     </div>
