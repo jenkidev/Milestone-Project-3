@@ -77,6 +77,12 @@
 ### User Stories
 #### First-time User 
 
+1. I want to view news relevant to the Bridgend Eagles basketball team.
+2. I want to view the fixtures for the Bridgend Eagles basketball team.
+3. I want to see the training times for team.
+4. I want to contact the team via email.
+5. I want to register as a user to the site.
+6. I want to view social media relevant to the team.
 
 #### Returning User
 
