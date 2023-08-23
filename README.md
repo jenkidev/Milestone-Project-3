@@ -130,7 +130,7 @@ The scope of the project in it’s first release is defined by the following fea
 
 To create the wireframes for this site I used the balsamiq cloud service. This allowed me to create a more basic wireframe. This was helpful as I have found in the past having a more complex and detailed wireframe to be quite restricting. 
 
-<details><summary>Home Page Wireframe (news) - Mobile</summary><img src="docs/wireframes/Home Page Mobile.png"></details><br>
+<details><summary>Home Page Wireframe (news) - Mobile</summary><img src="docs/wireframes/Fixtures Page Mobile.png"></details><br>
 
 <details><summary>Home Page Wireframe (news) - Tablet</summary><img src="docs/wireframes/Home Page Tablet.png"></details><br>
 
