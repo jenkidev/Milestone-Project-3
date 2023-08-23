@@ -43,15 +43,36 @@
 
 ### User Goals
 
+* To read the latest news on the Bridgend Eagles basketball team.
+* To view upcoming and past fixtures for the Bridgend Eagles basketball team.
+* To sign up to the site as a registered user.
+* To send an email to the site owner through a dedicated contact form.
+* Once signed in, to be able to view the players of the team along with their stats.
+
 ### Site Owner Goals
+
+* To have access to the admin account.
+* To view, add, update and delete articles.
+* To view, add, update and delete players.
+* To view, add, update and delete fixtures.
+
 
 ## User Experience
 
 ### Target Audience
 
+* Fans of the Bridgend Eagles Basketball. team.
+* Players of the Bridgend Eagles Basketbal teaml
+* People who wish to join the Bridgend Eagles Basketball team.
+* Senior memebership/administrators of the team.
 
 ### User Requirements and Expectations
 
+* Easy to navigate site and intuitive design.
+* Clear and simple information about the team.
+* The ability to interact with all information stored in the database relevant to the team following the CRUD methodology.
+* Responsive design that adapts to mobile, tablet and desktop.
+* Easy to fill out contact form.
 
 ### User Stories
 #### First-time User 
@@ -73,8 +94,31 @@
 
 ### Wireframes
 
+To create the wireframes for this site I used the balsamiq cloud service. This allowed me to create a more basic wireframe. This was helpful as I have found in the past having a more complex and detailed wireframe to be quite restricting. 
 
+<details><summary>Home Page Wireframe (news) - Mobile</summary><img src="docs/wireframes/Home Page Mobile.png"></details><br>
 
+<details><summary>Home Page Wireframe (news) - Tablet</summary><img src="docs/wireframes/Home Page Tablet.png"></details><br>
+
+<details><summary>Home Page Wireframe (news) - Desktop</summary><img src="docs/wireframes/Home Page Desktop.png"></details><br>
+
+<details><summary>Players Page - Mobile</summary><img src="docs/wireframes/Players Page Mobile.png"></details><br>
+
+<details><summary>Players Page Wireframe - Tablet</summary><img src="docs/wireframes/Players Page Tablet.png"></details><br>
+
+<details><summary>Players Page Wireframe - Desktop</summary><img src="docs/wireframes/Players Page Desktop.png"></details><br>
+
+<details><summary>Fixtures Page Wireframe - Mobile</summary><img src="docs/wireframes/Fixtures Page Mobile .png"></details><br>
+
+<details><summary>Fixtures Page Wireframe - Tablet</summary><img src="docs/wireframes/Fixtures Page Tablet.png"></details><br>
+
+<details><summary>Fixtures Page Wireframe - Desktop</summary><img src="docs/wireframes/Fixtures Page Desktop.png"></details><br>
+
+<details><summary>Contact Page Wireframe - Mobile</summary><img src="docs/wireframes/Contact Page Mobile.png"></details><br>
+
+<details><summary>Contact Page Wireframe - Tablet</summary><img src="docs/wireframes/Contact Page Tablet.png"></details><br>
+
+<details><summary>Contact Page Wireframe - Desktop</summary><img src="docs/wireframes/Contact Page Desktop.png"></details><br>
 
 ### Site Layout
 
