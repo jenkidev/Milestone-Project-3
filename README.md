@@ -102,10 +102,10 @@
 13. I want to delete an article.
 14. I want to add new fixtures.
 15. I want to edit existing fixtures.
-16. I want to delete an fixture.
+16. I want to delete a fixture.
 17. I want to add new players.
 18. I want to edit existing players.
-19. I want to delete an player.
+19. I want to delete a player.
 20. I want to sign into an account with admin permissions.
 21. I want to receive emails from users that fill out the relevant form.
 
@@ -309,37 +309,37 @@ The website was tested on the following devices:
 
 | **Feature Used** | **User Action** | **Expectation** | **Result** |
 | ---------------- | --------------- | --------------- | ---------- |
-|  |  |  |  |
+| Navigation Bar and News Page | Website opens on news page or user clicks on link in nav bar to navigate there | User should be directed to news page where they can scroll through published articles | Works as expected |
 
 2. I want to view the fixtures for the Bridgend Eagles basketball team.
 
 | **Feature Used** | **User Action** | **Expectation** | **Result** |
 | ---------------- | --------------- | --------------- | ---------- |
-|  |  |  |  |
+| Navigation Bar and Fixtures Page | User clicks on fixtures on Nav bar and is directed to fixtures page. | User can scroll through the page to view the fixtures and the related details such as score, they can click on each fixture to see location details | Works as expected |
 
 3. I want to see the training times for team.
 
 | **Feature Used** | **User Action** | **Expectation** | **Result** |
 | ---------------- | --------------- | --------------- | ---------- |
-|  |  |  |  |
+| Footer | User can scroll to the bottom of the page | At the bottom of the page is the footer which contains the teams training times. | Works as expected |
 
 4. I want to contact the team via email.
 
 | **Feature Used** | **User Action** | **Expectation** | **Result** |
 | ---------------- | --------------- | --------------- | ---------- |
-|  |  |  |  |
+| Navigation Bar, Contact Us page | User clicks on contact link and is directed to a page with a form to fill out. | User can fill out form with Name, Email and Comments and submit that form which will then be automatically emailed to site owner via EmailJS functionality. | Works as expected |
 
 5. I want to register as a user to the site.
 
 | **Feature Used** | **User Action** | **Expectation** | **Result** |
 | ---------------- | --------------- | --------------- | ---------- |
-|  |  |  |  |
+| Navigation Bar, Registration Page | User clicks on register link and is directed to a page with a form to fill out. | User can type a username and password for the site which upon submitting the form will register that username and password with the site for future sign in's | Works as expected |
 
 6. I want to view social media relevant to the team.
 
 | **Feature Used** | **User Action** | **Expectation** | **Result** |
 | ---------------- | --------------- | --------------- | ---------- |
-|  |  |  |  |
+| Footer | User can scroll to the bottom of the page | Located in the footer are icons representing three social media sites which when clicked upon will direct the user to the relevant site | Works as expected, in a realistic release of site the links would be set to actual social media pages |
 
 
 ### Returning User
@@ -348,25 +348,25 @@ The website was tested on the following devices:
 
 | **Feature Used** | **User Action** | **Expectation** | **Result** |
 | ---------------- | --------------- | --------------- | ---------- |
-|  |  |  |  |
+| Navigation Bar and Fixtures Page | User clicks on fixtures on Nav bar and is directed to fixtures page. | User can scroll through the page to view the fixtures and the related details such as score, they can click on each fixture to see location details | Works as expected |
 
 8. I want to see the training times for team.
 
 | **Feature Used** | **User Action** | **Expectation** | **Result** |
 | ---------------- | --------------- | --------------- | ---------- |
-|  |  |  |  |
+| Footer | User can scroll to the bottom of the page | At the bottom of the page is the footer which contains the teams training times. | Works as expected |
 
 9. I want to sign into the site using a created account.
 
 | **Feature Used** | **User Action** | **Expectation** | **Result** |
 | ---------------- | --------------- | --------------- | ---------- |
-|  |  |  |  |
+| Navigation Bar, SignIn Page | User will click on sign in link in nav bar, this will then direct them to sign in page. User will then enter a username and password and submit. | User is redirected to news page with a flash message informing them they have successfully signed in | Works as expected |
 
 10. I want to view the players on the team and their statistics.
 
 | **Feature Used** | **User Action** | **Expectation** | **Result** |
 | ---------------- | --------------- | --------------- | ---------- |
-|  |  |  |  |
+| Navigation Bar, players page | User clicks on the nav bar link for the players page. | User is redirected to player page. Once there the user can scroll through the listed players and upon clicking on the player card a list of statistics will be displayed. | Works as expected |
 
 ### Site Owner 
 
@@ -374,67 +374,67 @@ The website was tested on the following devices:
 
 | **Feature Used** | **User Action** | **Expectation** | **Result** |
 | ---------------- | --------------- | --------------- | ---------- |
-|  |  |  |  |
+| Articles page, add articles button, add articles page | Admin has access to add article button which can be clicked | Admin is redirected to add article page with a form to fill out. Once filled the admin can submit the form which will post to the database and is accessed by the front end site to be displayed. The Admin is redirected to the articles page and a flash message is displayed informing them that the article has been successfully added | Works as expected |
 
 12. I want to edit existing articles.
 
 | **Feature Used** | **User Action** | **Expectation** | **Result** |
 | ---------------- | --------------- | --------------- | ---------- |
-|  |  |  |  |
+| Articles page, edit articles button, edit articles page | Admin has access to edit article button which can be clicked | Admin is redirected to edit article page with a form prepopulated with fields from the article being edited. Once completed the admin can submit the form which will update the database and is accessed by the front end site to be displayed. The Admin is redirected to the articles page and a flash message is displayed informing them that the article has been successfully edited | Works as expected |
 
 13. I want to delete an article.
 
 | **Feature Used** | **User Action** | **Expectation** | **Result** |
 | ---------------- | --------------- | --------------- | ---------- |
-|  |  |  |  |
+| Edit articles page, delete article button | Admin clicks on delete article button | After clicking on delete article button a modal will appear asking the admin to confirm the delete request. If yes is selected then the admin is redirected to the article page with a flash message informing the admin that the article has been successfully deleted. The article has now been removed from the database | Works as expected |
 
 14. I want to add new fixtures.
 
 | **Feature Used** | **User Action** | **Expectation** | **Result** |
 | ---------------- | --------------- | --------------- | ---------- |
-|  |  |  |  |
+| Fixtures page, add fixture button, add fixture page | Admin has access to add fixture button which can be clicked | Admin is redirected to add fixture page with a form to fill out. Once filled the admin can submit the form which will post to the database and is accessed by the front end site to be displayed. The Admin is redirected to the fixtures page and a flash message is displayed informing them that the fixture has been successfully added | Works as expected |
 
 15. I want to edit existing fixtures.
 
 | **Feature Used** | **User Action** | **Expectation** | **Result** |
 | ---------------- | --------------- | --------------- | ---------- |
-|  |  |  |  |
+| Fixtures page, edit fixture button, edit fixture page | Admin has access to edit fixture button which can be clicked | Admin is redirected to edit fixture page with a form prepopulated with fields from the fixture being edited. Once completed the admin can submit the form which will update the database and is accessed by the front end site to be displayed. The Admin is redirected to the fixtures page and a flash message is displayed informing them that the fixture has been successfully edited | Works as expected |
 
-16. I want to delete an fixture.
+16. I want to delete a fixture.
 
 | **Feature Used** | **User Action** | **Expectation** | **Result** |
 | ---------------- | --------------- | --------------- | ---------- |
-|  |  |  |  |
+| Edit fixture page, delete fixture button | Admin clicks on delete fixture button | After clicking on delete fixture button a modal will appear asking the admin to confirm the delete request. If yes is selected then the admin is redirected to the fixture page with a flash message informing the admin that the fixture has been successfully deleted. The fixture has now been removed from the database | Works as expected |
 
 17. I want to add new players.
 
 | **Feature Used** | **User Action** | **Expectation** | **Result** |
 | ---------------- | --------------- | --------------- | ---------- |
-|  |  |  |  |
+| Players page, add player button, add player page | Admin has access to add player button which can be clicked | Admin is redirected to add player page with a form to fill out. Once filled the admin can submit the form which will post to the database and is accessed by the front end site to be displayed. The Admin is redirected to the players page and a flash message is displayed informing them that the player has been successfully added | Works as expected |
 
 18. I want to edit existing players.
 
 | **Feature Used** | **User Action** | **Expectation** | **Result** |
 | ---------------- | --------------- | --------------- | ---------- |
-|  |  |  |  |
+| players page, edit player button, edit player page | Admin has access to edit player button which can be clicked | Admin is redirected to edit player page with a form prepopulated with fields from the player being edited. Once completed the admin can submit the form which will update the database and is accessed by the front end site to be displayed. The Admin is redirected to the players page and a flash message is displayed informing them that the player has been successfully edited | Works as expected |
 
-19. I want to delete an player.
+19. I want to delete a player.
 
 | **Feature Used** | **User Action** | **Expectation** | **Result** |
 | ---------------- | --------------- | --------------- | ---------- |
-|  |  |  |  |
+| Edit player page, delete player button | Admin clicks on delete player button | After clicking on delete player button a modal will appear asking the admin to confirm the delete request. If yes is selected then the admin is redirected to the player page with a flash message informing the admin that the player has been successfully deleted. The player has now been removed from the database | Works as expected |
 
 20. I want to sign into an account with admin permissions.
 
 | **Feature Used** | **User Action** | **Expectation** | **Result** |
 | ---------------- | --------------- | --------------- | ---------- |
-|  |  |  |  |
+| Navigation Bar, Signin Page | User inputs admin username and password into sign in form and submits | Flash message appears informing user they have signed into admin account and have been redirected to News page. Buttons to Add and Edit existing records are available including a delete button within the edit pages. | Works as expected |
 
 21. I want to receive emails from users that fill out the relevant form.
 
 | **Feature Used** | **User Action** | **Expectation** | **Result** |
 | ---------------- | --------------- | --------------- | ---------- |
-|  |  |  |  |
+| Contact Us Page | User can access a contact page where a form will be present to fill out | The user can provide their Name, E-mail and questions which upon submission will be emailed to site owner via EmailJS client | Works as expected |
 
 
 ## Bug Squashing
