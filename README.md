@@ -199,16 +199,44 @@ The font used for the site is the "Exo" font as this had quite a bold and easy t
 
 #### HTML Validation- W3C markup validation service was used to assess the validity of my HTML code.
 
+<details><summary>HTML Validation of News Page</summary><img src="docs/validation/HTML/Home-News_validation.png"></details><br>
 
+<details><summary>HTML Validation of Edit Article Page</summary><img src="docs/validation/HTML/edit_article_validation.png"></details><br>
+
+<details><summary>HTML Validation of Add Article Page</summary><img src="docs/validation/HTML/Add_article_validation.png"></details><br>
+
+<details><summary>HTML Validation of Players Page</summary><img src="docs/validation/HTML/display_players_validation.png"></details><br>
+
+<details><summary>HTML Validation of Edit Players Page</summary><img src="docs/validation/HTML/Edit_player_validation.png"></details><br>
+
+<details><summary>HTML Validation of Add Players Page</summary><img src="docs/validation/HTML/Add_player_validation.png"></details><br>
+
+<details><summary>HTML Validation of Fixtures Page</summary><img src="docs/validation/HTML/display_fixtures_validation.png"></details><br>
+
+<details><summary>HTML Validation of Edit Fixtures Page</summary><img src="docs/validation/HTML/edit_fixture_validation.png"></details><br>
+
+<details><summary>HTML Validation of Add Fixtures Page</summary><img src="docs/validation/HTML/Add_fixture_validation.png"></details><br>
+
+<details><summary>HTML Validation of Contact Page</summary><img src="docs/validation/HTML/contact_validation.png"></details><br>
+
+<details><summary>HTML Validation of SignIn Page</summary><img src="docs/validation/HTML/sign_in_validation.png"></details><br>
+
+<details><summary>HTML Validation of Registration Page</summary><img src="docs/validation/HTML/register_validation.png"></details><br>
+
+<details><summary>HTML Validation of 500 Page</summary><img src="docs/validation/HTML/500_error_validation.png"></details><br>
 
 
 #### CSS Validation- W3C CSS validation service was used to assess the validity of my CSS code
 
-
+<details><summary>CSS validation of whole site styling</summary><img src="docs/validation/CSS/CSS_validation.png"></details><br>
 
 #### JavaScript Validation- JS hint was used to assess the validity of my scripts
 
+<details><summary>Validation of custom scripts using JS hint</summary><img src="docs/validation/JS/Custom_JS_validation.png"></details><br>
 
+#### Python Validation- The CI python linter was used to assess the the validity of my python file
+
+<details><summary>Validation of python file using CI python linter</summary><img src="docs/validation/Python/app.py_validation.png"></details><br>
 
 ### Performance and Accessibility
 
