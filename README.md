@@ -191,7 +191,26 @@ The font used for the site is the "Exo" font as this had quite a bold and easy t
 
 ### Languages
 
+* HTML
+* CSS
+* JavaScript
+* Python
+
 ### Tools
+
+* Flask
+* Materialize
+* MongoDB
+* Git
+* GitHub
+* CodeAnywhere
+* Balsamiq
+* Google Fonts
+* Font Awesome
+* Favicon<span>.</span>io
+* Lucid Chart
+* Figma Flowcharts
+ 
 
 ## Site Features
 
@@ -244,6 +263,30 @@ The font used for the site is the "Exo" font as this had quite a bold and easy t
 
 Google Lighthouse as part of the Chrom dev tools was used to assess performance and accessibility.
 
+<details><summary>Lighthouse Score of News Page</summary><img src="docs/lighthouse_results/news_lighthouse.png"></details><br>
+
+<details><summary>Lighthouse Score of Add Article Page</summary><img src="docs/lighthouse_results/add_article_lighthouse.png"></details><br>
+
+<details><summary>Lighthouse Score of Edit Article Page</summary><img src="docs/lighthouse_results/edit_article_lighthouse.png"></details><br>
+
+<details><summary>Lighthouse Score of Players Page</summary><img src="docs/lighthouse_results/players_lighthouse.png"></details><br>
+
+<details><summary>Lighthouse Score of Add Player Page</summary><img src="docs/lighthouse_results/add_player_lighthouse.png"></details><br>
+
+<details><summary>Lighthouse Score of Edit Player Page</summary><img src="docs/lighthouse_results/edit_player_lighthouse.png"></details><br>
+
+<details><summary>Lighthouse Score of Fixtures Page</summary><img src="docs/lighthouse_results/fixtures_lighthouse.png"></details><br>
+
+<details><summary>Lighthouse Score of Edit Fixtures Page</summary><img src="docs/lighthouse_results/add_fixture_lighthouse.png"></details><br>
+
+<details><summary>Lighthouse Score of Add Fixtures Page</summary><img src="docs/lighthouse_results/edit_fixture_lighthouse.png"></details><br>
+
+<details><summary>Lighthouse Score of Contact Page</summary><img src="docs/lighthouse_results/contact_us_lighthouse.png"></details><br>
+
+<details><summary>Lighthouse Score of SignIn Page</summary><img src="docs/sign_in_results/news_lighthouse.png"></details><br>
+
+<details><summary>Lighthouse Score of Registration Page</summary><img src="docs/register_results/news_lighthouse.png"></details><br>
+
 
 ### Device Tests
 
@@ -255,9 +298,11 @@ The website was tested on the following devices:
 
 ### Responsiveness
 
-[Responsinator](http://www.responsinator.com/?url=jenkidev.github.io%2FMilestone_project_2%2F) was used to assess the responsiveness of the project. 
+[Responsinator](http://www.responsinator.com/?url=https%3A%2F%2Fbridgend-eagles-948c0260d14b.herokuapp.com%2Fdisplay_articles) was used to assess the responsiveness of the project. 
 
 ### User Story Tests
+
+### First Time User
 
 1. I want to view news relevant to the Bridgend Eagles basketball team.
 
@@ -297,7 +342,7 @@ The website was tested on the following devices:
 |  |  |  |  |
 
 
-#### Returning User
+### Returning User
 
 7. I want to view the fixtures for the Bridgend Eagles basketball team.
 
@@ -323,7 +368,7 @@ The website was tested on the following devices:
 | ---------------- | --------------- | --------------- | ---------- |
 |  |  |  |  |
 
-#### Site Owner 
+### Site Owner 
 
 11. I want to add new articles.
 
@@ -414,6 +459,9 @@ When using the delete functionality for fixtures.html after selecting to delete 
 
 ## Credits
 
+* Images for the site were acquired from [Pexels](https://www.pexels.com/)
+* Majority of python code was adapted from the walkthorugh project (Task Manager).
+* [Materialize](https://materializecss.com/) was used as the framework for this site aiding in components and responsiveness.
 
 
 ## Thank You
