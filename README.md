@@ -157,7 +157,11 @@ To create the wireframes for this site I used the balsamiq cloud service. This a
 
 ### Site Layout
 
-The Site will have four main pages and these will be the news page, fixtures page, players page and contact page. These pages will be accessed via a nav bar at the top of the page. There will be two other sub pages a registration page and a sign in page and one more link in the nav bar where users can sign out.
+The Site will have four main pages and these will be the news page, fixtures page, players page and contact page. 
+These pages will be accessed via a nav bar at the top of the page. 
+There will be two other sub pages; a registration page and a sign in page and one more link in the nav bar where users can sign out.
+
+The design of the site will be achieved using the materialize framework.
 
 #### News Page- 
 
@@ -174,6 +178,9 @@ The Site will have four main pages and these will be the news page, fixtures pag
 
 ### Colour Choices
 
+The colours for this website were decided on from the materialize colour pallet classes. The colours I decided on were the Blue-Lighten 1 selection.
+I chose this as it was in keeping with the usual colour scheme for many Bridgend based sports teams in real life such as the Bridgend Ravens rugby team.<br><br>
+<img src="docs/Color of site.png">
 
 ### Fonts
 The font used for the site is the "Exo" font as this had quite a bold and easy to read style whilst also being curved, thus giving the website an approachable feel.
