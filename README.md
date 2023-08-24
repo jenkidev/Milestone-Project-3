@@ -1,6 +1,8 @@
 # Bridgend Eagles Team Website
 (by Morgan Jenkins)
 
+![Bridgend Eagles Responsive Collection](docs/responsive_header.png)
+
 ## Table of Contents
 
 1. [Project Goals](#project-goals)
