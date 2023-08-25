@@ -165,11 +165,66 @@ There will be two other sub pages; a registration page and a sign in page and on
 
 The design of the site will be achieved using the materialize framework.
 
-#### News Page- 
+#### Navigation Bar
+The first thing that a user will see when they enter the site is the navigation bar. This will be made consistent across the whole site lending cohesion and familiarity and allowing all pages to be accessed without using the back button. It consists of a bar containing the navigation links and the logo for the site. The logo acts as an additional link for the index/news page. The nav bar is fully responsive and collapses into a hamburger icon with a pop out navigation list on any device tablet sized or smaller.
 
-#### Fixtures Page- 
+<details><summary>Navigation Bar</summary><img src="docs/features/Nav_bar.png"></details><br>
 
-#### Players Page-
+#### Footer-
+
+The footer of the page is another section which remains consistent throught the site. This informs the user that they have reached the bottom of the site and there is no more content. I have also included some useful information in the footer, such as a repeat of the team name, the training times of the team and links to social media sites.
+
+<details><summary>Footer</summary><img src="docs/features/Footer.png"></details><br>
+
+#### News Page
+
+The news page contains a series of cards styled from the Materialize framework that displays the news articles created by the site admin. The information on the cards is input through a front end form that the admin can access by clicking the 'add article' button. Once the form has been filled out the admin can submit the form which will then insert that information into a MongoDB collection which is then displayed on the news page in a new card. 
+
+The admin also has access to an edit article button where they can change any part of the article posted aside from the date which will always be the current date. Furthermore there is a delete article button on the edit article page which will completely remove the object from the MongoDB collection. 
+
+On both the add article and edit article page there is a cancel link which returns the admin to the display articles page.
+
+<details><summary>News Page- Gif</summary><img src="docs/features/display_articles.gif"></details><br>
+
+<details><summary>Add Article Page- Gif</summary><img src="docs/features/add_article.gif"></details><br>
+
+<details><summary>Edit Article- Gif</summary><img src="docs/features/edit_article.gif"></details><br>
+
+<details><summary>Delete Article- Gif</summary><img src="docs/features/delete_article.gif"></details><br>
+
+#### Fixtures Page
+
+The fixtures page contains an accordion styled list from the Materialize framework that display the fixtures created by the site admin. The information in the accordion is input through a front end form that the admin can access by clicking the 'add fixture' button. Once the form has been filled out the admin can submit the form which will then insert that information into a MongoDB collection which is then displayed on the fixture page as a new section on the accordion list. The accordion list is sorted by the game number.
+
+The admin also has access to an edit fixture button where they can change any part of the article posted. Furthermore there is a delete fixture button on the edit article page which will completely remove the object from the MongoDB collection. 
+
+On both the add fixture and edit fixture page there is a cancel link which returns the admin to the display articles page.
+
+<details><summary>Fixtures Page- Gif</summary><img src="docs/features/display_fixtures.gif"></details><br>
+
+<details><summary>Add Fixture Page- Gif</summary><img src="docs/features/add_fixture.gif"></details><br>
+
+<details><summary>Edit Fixture- Gif</summary><img src="docs/features/edit_fixture.gif"></details><br>
+
+<details><summary>Delete Fixture- Gif</summary><img src="docs/features/delete_fixture.gif"></details><br>
+
+#### Players Page
+
+The players page contains a series of cards styled from the Materialize framework that displays the players Profile photo and information (The cards can be clicked on to display further relevant atatistics) created by the site admin. The information on the cards is input through a front end form that the admin can access by clicking the 'add player' button. The profile photo has a default value which inputs a placeholder image until the site admin can provide an appropriate link for an image (I have used imgur in this instance however any image hosting site should suffice). Once the form has been filled out the admin can submit the form which will then insert that information into a MongoDB collection which is then displayed on the players page in a new card. 
+
+The admin also has access to an edit player button where they can change any part of the player posted. Furthermore there is a delete player button on the edit player page which will completely remove the object from the MongoDB collection. 
+
+On both the add player and edit player page there is a cancel link which returns the admin to the display players page.
+
+As a protection measure only registered users can view the Players page to protect personal information, as part of a further release any attempt to register will have to be approved by the site admin.
+
+<details><summary>Players Page- Gif</summary><img src="docs/features/display_players.gif"></details><br>
+
+<details><summary>Add Player Page- Gif</summary><img src="docs/features/add_player.gif"></details><br>
+
+<details><summary>Edit Player- Gif</summary><img src="docs/features/edit_player.gif"></details><br>
+
+<details><summary>Delete Player- Gif</summary><img src="docs/features/delete_player.gif"></details><br>
 
 #### Contact Page
 
