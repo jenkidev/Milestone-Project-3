@@ -228,7 +228,15 @@ As a protection measure only registered users can view the Players page to prote
 
 #### Contact Page
 
-#### SignIn and Registration Pages-
+The contact Page is for users to get in contact with the site owner. There is a form to be filled out where they provide first name, last name, email address and then a message to the site owner. Upon pressing submit an alert pops up to inform them that the message has been sent and the form will then reset.
+
+This page uses the emailJS API to facilitate sending the form as an email.
+
+<details><summary>Contact Page- Gif</summary><img src="docs/features/contact_form.gif"></details><br>
+
+#### SignIn and Registration Pages
+
+These two pages are very similar in structure. They both contain a form for the user to fill out. They provide a username and password 
 
 #### Sign Out Link- 
 
@@ -265,6 +273,7 @@ The font used for the site is the "Exo" font as this had quite a bold and easy t
 * Favicon<span>.</span>io
 * Lucid Chart
 * Figma Flowcharts
+* Imgur
  
 
 ## Site Features
