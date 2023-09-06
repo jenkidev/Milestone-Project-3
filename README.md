@@ -3,6 +3,8 @@
 
 ![Bridgend Eagles Responsive Collection](docs/responsive_header.png)
 
+[Live Project](https://bridgend-eagles-948c0260d14b.herokuapp.com/)
+
 ## Table of Contents
 
 1. [Project Goals](#project-goals)
@@ -36,9 +38,8 @@
     5. [User Story Tests](#user-story-tests)
 7. [Bug Squashing](#bug-squashing)
 8. [Deployment](#deployment)
-    * [Deploying to Github Pages](#deploying-to-github-pages)
-    * [Forking the githubrepository](#forking-the-github-repository)
-    * [Cloning the repository](#cloning-the-github-repository)
+    * [Project Creation](#project-creation)
+    * [Deployment to Heroku](#deployment-to-heroku)
 9. [Credits](#credits)
 10. [Thank You](#thank-you)
 
@@ -236,10 +237,93 @@ This page uses the emailJS API to facilitate sending the form as an email.
 
 #### SignIn and Registration Pages
 
-These two pages are very similar in structure. They both contain a form for the user to fill out. They provide a username and password 
+These two pages are very similar in structure. They both contain a form for the user to fill out. They provide a username and password and click the submit button. The registration page inserts the new user to the collection. The sign in page checks the collection for an existing user and initiates a new user session if the user is found. 
 
-#### Sign Out Link- 
+<details><summary>SignIn- Gif</summary><img src="docs/features/sign_in.gif"></details><br>
 
+<details><summary>Registration- Gif</summary><img src="docs/features/registration.gif"></details><br>
+
+#### Sign Out Link
+
+This is a link in the nav bar only visible once signed in. Once clicked it will end the current user session.
+
+<details><summary>Sign Out- Gif</summary><img src="docs/features/sign_out.gif"></details><br>
+
+### User Path
+
+Using Figma Charts I created a flowchert to diagram a users path through the website.
+
+<img src="docs/FlowChart_For_MS3.png">
+
+### Database Structure
+
+As seen below is the structure of the MongoDB database and any relations between the collections, this diagram was created with Lucid Chart.
+
+<img src="docs/Database_Structure.png">
+
+### MongoDB Collection
+
+Below you will see examples documents from each of the collections.
+
+#### Articles
+
+{"_id":{"$oid":"UniqueID"},
+
+"heading": "Strong start for Eagles",
+
+"date": "08 August 2023",
+
+"content": "It was a good start for the Eagles this season, winning in their opening game. Multiple players scored double digits to help power them to victory.",
+
+"author": "Mark Jones"}
+
+#### Users
+
+{"_id":{"$oid":"UniqueID"},
+
+"username":"admin",
+
+"password":"Hashed password"}
+
+#### Players
+
+{"_id":{"$oid":"UniqueID"},
+
+"position_name":"center","player_name":"Big John",
+
+"player_height":"203cm","player_weight":"102kg",
+
+"player_points":"26.9","player_rebounds":"11.2",
+
+"player_assists":"3.2",
+
+"player_profile":"https://i.imgur.com/kvFKZTZ.jpg"}
+
+#### Positions
+
+{"_id":{"$oid":"UniqueID"},
+
+"position_name":"point guard"}
+
+#### Fixtures
+
+{"_id":{"$oid":"UniqueID"},
+
+"game":"2",
+
+"opponent":"Barry Badgers",
+
+"home_away":"Away",
+
+"location":"Barry Leisure Centre",
+
+"time":"20:00",
+
+"eagles_score":"75",
+
+"opponent_score":"43",
+
+"date":"Aug 17, 2023"}
 
 ### Colour Choices
 
@@ -509,16 +593,40 @@ When using the delete functionality for fixtures.html after selecting to delete 
 
 ## Deployment
 
-### Deploying to GitHub Pages
+### Project Creation
+I used the [CI MongoDB Code Anywhere Full Template](https://github.com/Code-Institute-Org/ci-mongo-template) to create this project and used Code Anywhere as my IDE.
+
+From the CI Mongo template above the steps to create this project were:
+1. Click on 'Use this template' and select 'Create a new repository'
+2. Enter your chosen repo name
+3. Click 'Create Repository'
+4. From the new GitHub repo copy the the page URL
+5. Open Code Anywhere and navigate to the 'workspaces' page
+6. Click on 'New Workspace'
+7. Paste the GitHub repo URL in to the 'Repository URL' box
+8. Click 'Create'
 
 
+### Deployment to Heroku
 
-### Forking the GitHub Repository
+To deploy to Heroku:
+1. In Code Anywhere CLI from the main directory run `pip3 freeze > requirements.txt` to create/update a requirements.txt file containing project dependencies.
+2. In Code Anywhere CLI from the main directory run `echo web: python app.py > Procfile` to create a Procfile. Check that the file contains the text 'web: python app.py' and delete any blank lines at the bottom.
+3. Push the 2 new files to the GitHub repository
+4. Login to Heroku, select 'Create New App', create a unique name for the app and select your nearest region. Click 'Create App'
+5. Navigate to the Deploy tab on Heroku dashboard and select Github, search for your repository by name and click 'connect'.
+6. Navigate to 'settings', click reveal config vars and input the the following:
 
+IP
+MONGO_DBNAME
+MONGO_URI
+SECRET_KEY
+OMDB_API_KEY
+PORT
 
-
-### Cloning the GitHub Repository
-
+7. Go back to the Deploy tab and 'Enable Automatic Deploys'
+8. Click deploy branch
+9. Once build is complete click on 'View' to open app in the browser
 
 
 ## Credits
