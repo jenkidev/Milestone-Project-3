@@ -3,7 +3,7 @@
 
 ![Bridgend Eagles Responsive Collection](docs/responsive_header.png)
 
-[Live Project](https://bridgend-eagles-948c0260d14b.herokuapp.com/)
+[Live Project](https://bridgend-eagles-948c0260d14b.herokuapp.com/) (Deprecated as no Hosting available)
 
 ## Table of Contents
 
